@@ -1,0 +1,29 @@
+.founder {
+  background-image: url("/images/cb.png");
+  background-repeat: no-repeat;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  padding: 60px 0;
+  display: flex;
+}
+.widget {
+  flex: 0.6;
+}
+.content {
+  flex: 1.4;
+}
+.content h2 {
+  font-size: 35px;
+  margin-bottom: 10px;
+  color: var(--main);
+  font-weight: 600;
+}
+.content p {
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.content span {
+  border-bottom: 4px solid red;
+}

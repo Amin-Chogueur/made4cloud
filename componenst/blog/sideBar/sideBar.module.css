@@ -1,0 +1,57 @@
+.sideBar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 10;
+  background-color: var(--btn);
+  color: white;
+  padding: 80px 20px 0;
+}
+.sideBar button {
+  font-size: 25px;
+  color: white;
+  margin-bottom: 20px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.sideBar ol li a {
+  text-transform: capitalize;
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: 0.5s;
+}
+.sideBar ol li a:hover {
+  margin-left: 10px;
+}
+.firstCategorie,
+.firstSubCategorie {
+  position: relative;
+}
+.firstSubCategorie,
+.secondSubCategorie {
+  background-color: var(--btn);
+  color: white;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.5s ease-out;
+  padding-left: 20px;
+  margin-top: 10px;
+}
+.sideBar ol li,
+.sideBar ul li {
+  margin-bottom: 20px;
+}
+.firstCategorie:hover > .firstSubCategorie {
+  max-height: 200px;
+}
+.secondCategorie:hover > .secondSubCategorie {
+  max-height: 200px;
+}
+.firstCategorie a,
+.secondCategorie a {
+  display: flex;
+  gap: 40px;
+}
