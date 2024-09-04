@@ -6,11 +6,11 @@ function Testimeniel() {
     <div className={styles.container}>
       <div className={styles.reviews}>
         <div className={styles.content}>
-          <h2>Client Raves About Pulstech</h2>
-          <p>💬 99.9% Customer Satisfaction</p>
+          <h2>Client Raves About Made4Cloud</h2>
+
           <p>
             Discover the genuine acclaim from those who`ve experienced
-            Pulstech`s transformative touch in their digital ventures.
+            Made4Cloud`s transformative touch in their digital ventures.
           </p>
         </div>
         <Carousel />

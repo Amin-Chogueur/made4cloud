@@ -1,6 +1,7 @@
 .founder {
   background-image: url("/images/cb.png");
   background-repeat: no-repeat;
+  background-position: right top;
 }
 .container {
   width: 80%;
@@ -23,7 +24,16 @@
 .content p {
   font-size: 14px;
   margin-bottom: 20px;
+  color: #222;
 }
 .content span {
   border-bottom: 4px solid red;
+}
+@media (max-width: 768px) {
+  .widget {
+    flex: 0.4;
+  }
+  .content {
+    flex: 1.6;
+  }
 }

@@ -7,17 +7,22 @@ function Footer() {
     <footer>
       <div className={styles.footer}>
         <div className={styles.desc}>
-          <Image src={"/images/logo.png"} width={150} height={150} alt="logo" />
+          <Image
+            src={"/images/made4cloudLogo.png"}
+            width={150}
+            height={150}
+            alt="logo"
+          />
           <p>
-            At Pulstech, we are not just developers; we are architects of
-            digital transformation. Established in 2022 in the vibrant city of
-            Paris, Pulstech brings over a decade of expertise in Microsoft
-            technologies, making us your trusted partner in navigating the
+            At Made4Cloud, we are not just developers; we are architects of
+            digital transformation. Established 2 in the vibrant city of Paris,
+            Made4Cloud brings over a decade of expertise in Salesforce
+            ecosystem, making us your trusted partner in navigating the
             ever-evolving digital landscape.
           </p>
         </div>
         <div className={styles.content}>
-          <div>
+          <div className={styles.navigation}>
             <h3>Navigation</h3>
             <ul className={styles.links}>
               {navLinks.map((link, i) => {
@@ -33,16 +38,30 @@ function Footer() {
           </div>
           <div className={styles.location}>
             <div>
-              <h3>France Office</h3>
-              <p>🔽Rue sant John Doe</p>
               <h3>London Office</h3>
-              <p>🔽Rue sant John Doe</p>
+              <p>
+                🔽MADE4CLOUD LTD
+                <br />
+                71-75 Shelton Street, Covent Garden
+                <br />
+                WC2H 9JQ
+                <br />
+                London
+              </p>
+              <h3>Paris Office</h3>
+              <p>
+                🔽Rue Alexendre Dumas
+                <br />
+                75011
+                <br />
+                Paris
+              </p>
             </div>
           </div>
           <div className={styles.contact}>
             <h3>Contact</h3>
             <ul>
-              <li>📞 +3398372782</li>
+              <li>📞 +33 977 217 620</li>
               <li>Facebook</li>
               <li>Linkedin</li>
             </ul>
@@ -50,7 +69,7 @@ function Footer() {
         </div>
       </div>
       <div className={styles.copyRight}>
-        Copyright © 2024 made4cloud. All rights reserved.
+        Copyright © 2024 <strong>Made4Cloud</strong>. All rights reserved.
       </div>
     </footer>
   );

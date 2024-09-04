@@ -5,8 +5,12 @@ function AboutFirst({ data }) {
   const directionStyles = data?.directionStyles;
   return (
     <div className={styles.aboutFirst}>
-      <div className={`${styles.container} ${directionStyles && styles.left}`}>
-        <div className={`${styles.content} ${directionStyles && styles.left}`}>
+      <div
+        className={`${styles.container} ${directionStyles ? styles.left : ""}`}
+      >
+        <div
+          className={`${styles.content} ${directionStyles ? styles.left : ""}`}
+        >
           <h1>{data.title}</h1>
           <p>{data.description}</p>
           <button>

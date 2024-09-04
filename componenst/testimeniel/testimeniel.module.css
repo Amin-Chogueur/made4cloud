@@ -1,5 +1,5 @@
 .container {
-  background: linear-gradient(to top, var(--btn), #ddd);
+  background: linear-gradient(to top, var(--main), #ddd);
 }
 .reviews {
   width: 80%;

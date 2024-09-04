@@ -7,9 +7,9 @@ function Hero() {
       <div className={styles.heroContent}>
         <h2> Empowering Innovation through Technology</h2>
         <p>
-          At Pulstech, we are not just developers; we are architects of digital
-          transformation. Established in 2022 in the vibrant city of Paris,
-          Pulstech brings over a decade of expertise in Microsoft technologies,
+          At Made4Cloud, we are not just developers; we are architects of
+          digital transformation. Established 2 in the vibrant city of Paris,
+          Made4Cloud brings over a decade of expertise in Salesforce ecosystem,
           making us your trusted partner in navigating the ever-evolving digital
           landscape.
         </p>

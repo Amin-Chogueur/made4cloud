@@ -5,23 +5,23 @@ import Version from "@/componenst/aboutComponents/version/Version";
 import GetInTouch from "@/componenst/getInTouch/GetInTouch";
 const aboutData = [
   {
-    title: "Pulstech Transforming Tomorrow Since 2024",
+    title: "Made4Cloud Transforming Tomorrow Since 2020",
     description:
-      "Welcome to Pulstech, where innovation meets technology.Established in 2022 in the heart of Paris, we`ve been on a relentless journey, pioneering digital solutions that define the future.",
+      "We're dedicated to driving tangible results for our clients, as evidenced by our proven track record of successful Salesforce implementations and customizations.",
     buttonContent: "Get Started!",
     image: "/images/about1.jpg",
   },
   {
     title: "Culture and Values",
     description:
-      "Welcome to Pulstech, where innovation meets technology. Established in 2022 in the heart of Paris, we've been on a relentless journey, pioneering digital solutions that define the future.",
+      "Welcome to Made4Cloud, where innovation meets technology. Established in 2022 in the heart of Paris, we've been on a relentless journey, pioneering digital solutions that define the future.",
     buttonContent: "Join the dream team!",
     image: "/images/about2.jpg",
   },
 ];
 function About() {
   return (
-    <div>
+    <div style={{ marginTop: "50px" }}>
       <AboutFirst data={aboutData[0]} />
       <Version />
       <Founder />

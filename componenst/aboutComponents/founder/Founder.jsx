@@ -8,10 +8,10 @@ function Founder() {
         <div className={styles.content}>
           <h2>Founder`s Note</h2>
           <p>
-            As the founder of Pulstech, I embarked on this journey with a vision
-            to redefine digital possibilities. Our commitment to excellence and
-            client satisfaction is at the core of everything we do. Join us in
-            this transformative adventure.
+            As the founder of Made4Cloud, I embarked on this journey with a
+            vision to redefine digital possibilities. Our commitment to
+            excellence and client satisfaction is at the core of everything we
+            do. Join us in this transformative adventure.
           </p>
           <span>By Anas</span>
         </div>

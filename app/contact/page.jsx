@@ -13,10 +13,24 @@ function Contact() {
           </p>
           <div className={styles.location}>
             <div>
-              <h3>France Office</h3>
-              <p>🔽Rue sant John Doe</p>
               <h3>London Office</h3>
-              <p>🔽Rue sant John Doe</p>
+              <p>
+                🔽MADE4CLOUD LTD
+                <br />
+                71-75 Shelton Street, Covent Garden
+                <br />
+                WC2H 9JQ
+                <br />
+                London
+              </p>
+              <h3>Paris Office</h3>
+              <p>
+                🔽Rue Alexendre Dumas
+                <br />
+                75011
+                <br />
+                Paris
+              </p>
             </div>
           </div>
           <div className={styles.contact}>

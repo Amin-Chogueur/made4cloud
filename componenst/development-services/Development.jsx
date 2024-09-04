@@ -1,23 +1,57 @@
 import Card from "./card/Card";
 import styles from "./development.module.css";
-const cardContent = [
+export const cardContent = [
   {
-    title: "Saas Solutions",
+    title: "Sales Cloud ",
     image: "/images/c1.jpg",
     description:
-      "Elevate your online presence with bespoke Saas websites developed using state-of-the-art technologies such as Microsoft, Java, and Javascript.",
+      "Empowers sales teams with a 360-degree view of customers, automates tasks to improve efficiency, and provides insights to close more deals.",
+    buttonContent: "Get Started!",
   },
   {
-    title: "Website Development",
+    title: "Service Cloud",
     image: "/images/c2.jpg",
     description:
-      "Harness the power of the web with dynamic websites built on Facbook, React JS, Next JS, NodeJS, Express JS and other cutting-edge platforms.",
+      "Helps sales professionals by providing visibility into customer support history, identifying upsell and cross-sell opportunities, and fostering customer loyalty, which can lead to repeat business.",
+    buttonContent: "Get Started!",
+    directionStyles: "left",
   },
   {
-    title: "Solution Migration",
+    title: "Experience Cloud",
     image: "/images/c3.jpg",
     description:
-      "Seamlessly transition your systems with our expertise in solution migration, including data migration strategies.",
+      " Create personalized portals for prospects and customers, share relevant content, accelerate the sales process, and improve customer engagement.",
+    buttonContent: "Get Started!",
+  },
+  {
+    title: "B2B commerce Cloud",
+    image: "/images/c4.jpg",
+    description:
+      " Integrates with Sales Cloud, providing sales reps with real-time visibility into customer orders, purchase history, and preferences, enabling them to tailor their sales approach.",
+    buttonContent: "Get Started!",
+    directionStyles: "left",
+  },
+  {
+    title: "CloudCraze",
+    image: "/images/c5.jpg",
+    description:
+      " We provide expertise in evolving CloudCraze implementations, resolving bugs, and facilitating smooth transitions to the B2B Lightning platform.",
+    buttonContent: "Get Started!",
+  },
+  {
+    title: "B2C Commerce Cloud",
+    image: "/images/c6.jpg",
+    description:
+      " While primarily focused on the online shopping experience, B2C Commerce Cloud data can provide insights into consumer behavior and preferences, which sales teams can leverage for targeted marketing and sales efforts.",
+    directionStyles: "left",
+    buttonContent: "Get Started!",
+  },
+  {
+    title: "Conga",
+    image: "/images/c1.jpg",
+    description:
+      "Configuring Conga sign and composer to align with your specific document templates, data fields, and business processes.",
+    buttonContent: "Get Started!",
   },
 ];
 function Development() {

@@ -8,7 +8,6 @@ import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
 function NavBar() {
   const pathName = usePathname();
-  console.log(pathName);
   const [isScrolled, setIsScrolled] = useState(false);
   const [showLink, setShowLink] = useState(false);
   function handleShowLinks() {
@@ -31,10 +30,15 @@ function NavBar() {
     };
   }, []);
   return (
-    <nav className={`${styles.navBar} ${isScrolled && styles.navBarBg}`}>
+    <nav className={`${styles.navBar} ${isScrolled ? styles.navBarBg : " "}`}>
       <h1>
         <Link href={"/"}>
-          <Image src={"/images/logo.png"} width={150} height={150} alt="logo" />
+          <Image
+            src={"/images/made4cloudLogo.png"}
+            width={60}
+            height={60}
+            alt="logo"
+          />
         </Link>
       </h1>
       <ul className={styles.links}>

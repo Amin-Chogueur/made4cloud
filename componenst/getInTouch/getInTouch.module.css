@@ -1,11 +1,12 @@
 .getInTouch {
   background-image: url("/images/cb.png");
   background-repeat: no-repeat;
+  background-position: right top;
 }
 .getContainer {
   width: 80%;
   margin: auto;
-  padding: 100px 0;
+  padding: 80px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;

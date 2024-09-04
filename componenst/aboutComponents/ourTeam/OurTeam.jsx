@@ -7,7 +7,7 @@ function OurTeam() {
           <h2>Our Team</h2>
           <p>
             Behind every success story is a dedicated team. Meet the passionate
-            individuals at Pulstech, each contributing their unique skills to
+            individuals at Made4Cloud, each contributing their unique skills to
             make our collective vision a reality.
           </p>
         </div>

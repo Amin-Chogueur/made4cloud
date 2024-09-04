@@ -42,31 +42,33 @@ async function Blog({ params, searchParams }) {
             </div>
             <div className={styles.relatedPost}>
               <h2>Others Related Topic</h2>
-              {relatedData?.map((item) => (
-                <div className={styles.blog} key={item.id}>
-                  <p className={styles.category}>
-                    {item.category} / {item.subCategory}
-                  </p>
-                  <div className={styles.imageContainer}>
-                    {" "}
-                    <Image fill src={item.image} alt={item.title} />
+              <div>
+                {relatedData?.map((item) => (
+                  <div className={styles.blog} key={item.id}>
+                    <p className={styles.category}>
+                      {item.category} / {item.subCategory}
+                    </p>
+                    <div className={styles.imageContainer}>
+                      {" "}
+                      <Image fill src={item.image} alt={item.title} />
+                    </div>
+                    <h3>{item.title}</h3>
+                    <p>{item.description}</p>
+                    <span>
+                      {item.author} / {item.date}
+                    </span>
+                    <Link
+                      className={styles.readAllLink}
+                      href={`/blog/${categorie.replace(
+                        / /g,
+                        "-"
+                      )}/${subCategorie.replace(/ /g, "-")}/${item.id}`}
+                    >
+                      READ ALL
+                    </Link>
                   </div>
-                  <h3>{item.title}</h3>
-                  <p>{item.description}</p>
-                  <span>
-                    {item.author} / {item.date}
-                  </span>
-                  <Link
-                    className={styles.readAllLink}
-                    href={`/blog/${categorie.replace(
-                      / /g,
-                      "-"
-                    )}/${subCategorie.replace(/ /g, "-")}/${item.id}`}
-                  >
-                    READ ALL
-                  </Link>
-                </div>
-              ))}
+                ))}
+              </div>
             </div>
           </div>
         </div>

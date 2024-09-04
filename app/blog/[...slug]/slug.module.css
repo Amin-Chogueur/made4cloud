@@ -14,11 +14,13 @@
 .slugPost > div:first-child {
   flex: 1.5;
 }
-.slugPost > div:last-child {
+.slugPost > .relatedPost {
   flex: 0.5;
 }
-.slugPost > div:last-child > div {
+.slugPost .relatedPost .blog {
   margin-bottom: 20px;
+  padding-bottom: 20px;
+  height: fit-content;
 }
 .slugContainer h2 {
   color: var(--main);
@@ -49,7 +51,7 @@
 .singleBlog {
   padding: 20px;
   width: 100%;
-  border: 2px solid #ddd;
+  background-color: #eee;
   border-radius: 5px;
 }
 
@@ -69,7 +71,7 @@
   margin-bottom: 5px;
   text-transform: uppercase;
   padding: 5px;
-  color: var(--btn);
+  color: var(--main);
   width: 100%;
 }
 .title {
@@ -81,15 +83,15 @@
 }
 .readAllLink {
   font-size: 12px;
-  color: var(--btn);
+  color: var(--main);
   text-decoration: underline;
 }
 
 .blog {
-  height: 450px;
+  height: fit-content;
   background-color: #eee;
   border-radius: 5px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
 
 .blog .category {
@@ -109,9 +111,10 @@
   text-overflow: ellipsis;
   white-space: normal;
   text-transform: capitalize;
+  text-justify: newspaper;
 }
 .blog h3 {
-  color: cadetblue;
+  color: var(--main);
   text-align: center;
   text-transform: capitalize;
   font-size: 20px;
@@ -122,41 +125,49 @@
 .slugContainer span {
   color: gray;
   margin-top: 10px;
-  padding-left: 10px;
+  padding: 10px;
   font-size: 14px;
   display: block;
 }
 .readAllLink {
   font-size: 12px;
-  color: var(--btn);
+  color: var(--main);
   text-decoration: underline;
   padding-left: 10px;
 }
+
 .relatedPost h2 {
   font-size: 24px;
 }
 @media (max-width: 992px) {
   .container {
-    width: 80%;
+    width: 90%;
+  }
+  .singleBlog {
+    padding: 0;
+  }
+  .singleBlog .title,
+  .singleBlog p {
+    padding: 10px;
   }
   .slugPost {
-    display: flex;
     flex-direction: column;
     gap: 40px;
   }
   .slugPost > div:first-child {
     flex: 1;
   }
-  .slugPost > div:last-child {
-    padding: 20px;
+  .slugPost .relatedPost > div {
     flex: 1;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-    gap: 20px;
+    gap: 30px;
   }
   .slugPost > div:last-child > div {
     margin-bottom: 20px;
   }
+}
+@media (max-width: 768px) {
   .imageContainer,
   .imageBigContainer {
     position: relative;
