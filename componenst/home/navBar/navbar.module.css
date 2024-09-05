@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 70px;
+  height: 55px;
   position: fixed;
   top: 0;
   left: 0;
@@ -12,10 +12,10 @@
   padding: 0 40px;
   background-color: white;
   box-shadow: 0px 0px 10px var(--btn);
-  color: #0f113b;
+  color: var(--main);
 }
 .navBarBg {
-  background-color: var(--main);
+  background-color: var(--newMain);
   color: white;
 }
 .navBar .links {
@@ -79,7 +79,7 @@
     top: 0;
     left: -1000px;
     width: 50%;
-    background-color: #0f113b;
+    background-color: var(--main);
     color: white;
     height: 100vh;
     padding-top: 100px;

@@ -83,6 +83,26 @@
   text-decoration: underline;
   padding-left: 10px;
 }
+
+.customShapeDividerTop1725574060 {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.customShapeDividerTop1725574060 svg {
+  position: relative;
+  display: block;
+  width: calc(121% + 1.3px);
+  height: 100px;
+}
+
+.customShapeDividerTop1725574060 .shapeFill {
+  fill: #289dd2;
+}
 @media (max-width: 992px) {
   .container {
     width: 90%;

@@ -1,6 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import { navLinks } from "@/constant/constant";
+import { GiPositionMarker } from "react-icons/gi";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoLogoFacebook } from "react-icons/io";
+import { FaLinkedin } from "react-icons/fa";
 import styles from "./footer.module.css";
 function Footer() {
   return (
@@ -40,8 +44,9 @@ function Footer() {
             <div>
               <h3>London Office</h3>
               <p>
-                🔽MADE4CLOUD LTD
-                <br />
+                <GiPositionMarker
+                  style={{ display: "inline", fontSize: "20px" }}
+                />
                 71-75 Shelton Street, Covent Garden
                 <br />
                 WC2H 9JQ
@@ -50,7 +55,14 @@ function Footer() {
               </p>
               <h3>Paris Office</h3>
               <p>
-                🔽Rue Alexendre Dumas
+                <GiPositionMarker
+                  style={{
+                    display: "inline",
+                    fontSize: "20px",
+                    marginRight: "5px",
+                  }}
+                />
+                Rue Alexendre Dumas
                 <br />
                 75011
                 <br />
@@ -61,9 +73,37 @@ function Footer() {
           <div className={styles.contact}>
             <h3>Contact</h3>
             <ul>
-              <li>📞 +33 977 217 620</li>
-              <li>Facebook</li>
-              <li>Linkedin</li>
+              <li>
+                {" "}
+                <FaPhoneAlt
+                  style={{
+                    display: "inline",
+                    marginRight: "5px",
+                    fontSize: "20px",
+                  }}
+                />{" "}
+                +33 977 217 620
+              </li>
+              <li>
+                <IoLogoFacebook
+                  style={{
+                    display: "inline",
+                    fontSize: "20px",
+                    marginRight: "5px",
+                  }}
+                />
+                Facebook
+              </li>
+              <li>
+                <FaLinkedin
+                  style={{
+                    display: "inline",
+                    fontSize: "20px",
+                    marginRight: "5px",
+                  }}
+                />
+                Linkedin
+              </li>
             </ul>
           </div>
         </div>

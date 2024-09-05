@@ -44,7 +44,7 @@
 
 .slide div p:nth-child(2) {
   font-size: 14px;
-  color: gray;
+  color: #222;
   margin: 5px;
 }
 .slide div p:nth-child(1) {

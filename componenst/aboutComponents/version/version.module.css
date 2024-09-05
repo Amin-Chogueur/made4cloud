@@ -1,5 +1,5 @@
 .versionContianer {
-  background-image: linear-gradient(to top, var(--main), #ddd);
+  background-image: linear-gradient(to top, var(--main), #ffffff);
 }
 .container {
   width: 80%;
@@ -14,7 +14,7 @@
   font-weight: 600;
 }
 .container p {
-  font-size: 14px;
+  font-size: 17px;
   color: #222;
 }
 @media (max-width: 768px) {

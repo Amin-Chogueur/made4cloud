@@ -23,7 +23,8 @@
   margin-bottom: 20px;
 }
 .left p {
-  color: gray;
+  color: #222;
+  font-size: 17px;
 }
 .right {
   flex: 0.8;

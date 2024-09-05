@@ -53,6 +53,14 @@ export const cardContent = [
       "Configuring Conga sign and composer to align with your specific document templates, data fields, and business processes.",
     buttonContent: "Get Started!",
   },
+  {
+    title: "Field Service Lightning",
+    image: "/images/c2.jpg",
+    description:
+      "Improve customer satisfaction and efficiency with our Field Service solutions. Technicians get real-time access to customer info, work orders, and inventory, while automated scheduling ensures timely job assignments. Mobile tools enable job updates, signatures, and invoicing for faster service and better customer experiences.",
+    buttonContent: "Get Started!",
+    directionStyles: "left",
+  },
 ];
 function Development() {
   return (

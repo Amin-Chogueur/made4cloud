@@ -34,9 +34,9 @@ function NavBar() {
       <h1>
         <Link href={"/"}>
           <Image
-            src={"/images/made4cloudLogo.png"}
-            width={60}
-            height={60}
+            src={"/images/Made4CloudNav.png"}
+            width={90}
+            height={90}
             alt="logo"
           />
         </Link>
