@@ -18,6 +18,7 @@
   height: 35px;
   border-radius: 50%;
   text-align: center;
+  margin: auto;
   cursor: pointer;
 }
 .indexPagesContainer button:disabled {
@@ -34,6 +35,6 @@
   width: 30px;
 }
 .indexCurrentPage {
-  background-color: var(--secondary);
-  color: var(--btn);
+  background-color: var(--main);
+  color: white;
 }

@@ -8,11 +8,10 @@
   padding: 80px 20px 0;
 }
 .sideBar button {
-  font-size: 25px;
+  font-size: 17px;
   color: white;
-  margin-bottom: 20px;
+  padding-bottom: 5px;
   text-align: left;
-  border-bottom: 1px solid #ddd;
 }
 
 .sideBar ol li a {

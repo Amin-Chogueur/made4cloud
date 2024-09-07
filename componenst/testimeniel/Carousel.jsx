@@ -1,14 +1,15 @@
 "use client";
-import Image from "next/image";
+
 import styles from "./Carousel.module.css";
 import { useState } from "react";
 import { MdOutlineStarPurple500 } from "react-icons/md";
 import { FaArrowCircleRight } from "react-icons/fa";
 import { FaArrowAltCircleLeft } from "react-icons/fa";
+import Image from "next/image";
 const sliderData = [
   {
     id: "1",
-
+    image: "/images/Nicolas.jpeg",
     description:
       " Since joining our team, Anes has demonstrated an exceptional ability to quickly adapt to our structure, as well as that of my client, and to deeply understand the specifics of his role. With his capacity to grasp complex business contexts and propose innovative solutions, along with his attentive listening skills and ability to identify even the vaguest of issues, Anes has successfully combined his strengths to effectively meet our needs. His commitment to finding suitable solutions and his ability to apply his knowledge to achieve objectives are remarkable. I highly recommend him for his expertise, skills, and the added value he brings to our organization.",
     auther: "Nicolas",
@@ -16,6 +17,7 @@ const sliderData = [
   },
   {
     id: "2",
+    image: "/images/Yann.jpeg",
     description:
       " Anes is a delivery expert. He can effectively manage various tasks and projects, even with limited guidance. He is a trustworthy person who works independently. ",
     auther: "Yann",
@@ -25,11 +27,7 @@ const sliderData = [
 function Carousel() {
   const [currentSlide, setCurrentSlide] = useState(0);
   function handleLeftBtn() {
-    if (currentSlide === 0) {
-      setCurrentSlide(sliderData.length - 1);
-    } else {
-      setCurrentSlide((pre) => pre - 1);
-    }
+    setCurrentSlide((pre) => pre - 1);
   }
   function handleRightBtn() {
     if (currentSlide === sliderData.length - 1) {
@@ -39,51 +37,49 @@ function Carousel() {
     }
   }
   return (
-    <div className={styles.parent}>
-      <div className={styles.sliderContainer}>
-        <button
-          className={currentSlide === 0 ? styles.hide : " "}
-          onClick={handleLeftBtn}
+    <div className={styles.sliderContainer}>
+      <button onClick={handleLeftBtn}>
+        <FaArrowAltCircleLeft
+          className={currentSlide === 0 ? styles.hide : ""}
+        />
+      </button>
+      {sliderData.map((slide, i) => (
+        <div
+          key={i}
+          className={styles.slide}
+          style={{ transform: `translateX(-${currentSlide * 101}%)` }}
         >
-          <FaArrowAltCircleLeft />
-        </button>
-        {sliderData.map((slide, i) => (
-          <div
-            key={i}
-            className={styles.slide}
-            style={{ transform: `translateX(-${currentSlide * 100}%)` }}
-          >
-            <div>
-              <p className={styles.stars}>
-                {[...Array(5)].map((_ele, index) => (
-                  <MdOutlineStarPurple500 key={1} />
-                ))}
-              </p>
-              <p className={styles.desc}>{slide.description}</p>
+          <div className={styles.content}>
+            <div className={styles.autherInfo}>
+              <Image
+                src={slide.image}
+                width={70}
+                height={70}
+                alt={slide.auther}
+              />
               <div>
                 <p>{slide.auther}</p>
+                <p className={styles.stars}>
+                  {[...Array(5)].map((_ele, index) => (
+                    <MdOutlineStarPurple500
+                      key={index}
+                      style={{ color: "orange" }}
+                    />
+                  ))}
+                </p>
                 <p>{slide.position}</p>
               </div>
             </div>
+            <p className={styles.desc}>{slide.description}</p>
           </div>
-        ))}
-        <button
-          className={currentSlide === sliderData.length - 1 && styles.hide}
-          onClick={handleRightBtn}
-        >
-          <FaArrowCircleRight />
-        </button>
-        <div className={styles.circles}>
-          {sliderData.map((slide, i) => (
-            <span
-              key={i}
-              className={
-                currentSlide === i ? styles.showCercle : styles.hideCurcle
-              }
-            ></span>
-          ))}
         </div>
-      </div>
+      ))}
+      <button
+        className={currentSlide === sliderData.length - 1 ? styles.hide : ""}
+        onClick={handleRightBtn}
+      >
+        <FaArrowCircleRight />
+      </button>
     </div>
   );
 }

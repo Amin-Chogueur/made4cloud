@@ -2,6 +2,7 @@
 import { useState } from "react";
 import styles from "./sideBar.module.css";
 import Link from "next/link";
+import { MdKeyboardDoubleArrowDown } from "react-icons/md";
 function SideBar() {
   const [showCategories, setShoCategories] = useState(false);
   function handleShowCategories() {
@@ -10,18 +11,20 @@ function SideBar() {
 
   return (
     <div className={styles.sideBar}>
-      <button onClick={handleShowCategories}>Blogs Categories</button>
+      <button onClick={handleShowCategories}>
+        Blogs Categories
+        <MdKeyboardDoubleArrowDown style={{ margin: "auto" }} />
+      </button>
       {showCategories && (
         <ol>
           <li>
             <Link href={"/blog"}>All Blogs</Link>
           </li>
           <li className={styles.firstCategorie}>
-            <Link href={"/blog/cloude-sf-products"}>
-              <span>cloude / sf products</span>{" "}
-              <span className={styles.showSub}>&darr;</span>
+            <Link href={"/blog/Salesforce-Developer"}>
+              <span>Salesforce Developer</span>
             </Link>
-            <ul className={styles.firstSubCategorie}>
+            {/* <ul className={styles.firstSubCategorie}>
               <li>
                 <Link href={"/blog/cloude-sf-products/sales"}>sales</Link>
               </li>
@@ -35,7 +38,7 @@ function SideBar() {
               <li>
                 <Link href={"/blog/cloude-sf-products/services"}>services</Link>
               </li>
-            </ul>
+            </ul>*/}
           </li>
           <li className={styles.secondCategorie}>
             <Link href={"/blog/apex"}>
@@ -54,16 +57,7 @@ function SideBar() {
             <Link href={"/blog/LWC"}>LWC</Link>
           </li>
           <li>
-            <Link href={"/blog/oracl"}>oracl</Link>
-          </li>
-          <li>
-            <Link href={"/blog/visual-Force"}>visual force page</Link>
-          </li>
-          <li>
-            <Link href={"/blog/SFDX"}>SFDX</Link>
-          </li>
-          <li>
-            <Link href={"/blog/VS-Code"}>VS code extentions</Link>
+            <Link href={"/blog/Salesforce-Admin"}>Salesforce Admin</Link>
           </li>
         </ol>
       )}

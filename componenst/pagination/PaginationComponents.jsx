@@ -1,5 +1,6 @@
 "use client";
-
+import { FaCircleArrowLeft } from "react-icons/fa6";
+import { FaArrowCircleRight } from "react-icons/fa";
 import styles from "./pagination.module.css";
 import { useSearchParams, useRouter } from "next/navigation";
 function PaginationComponents({ url, totalBlogs, perPage }) {
@@ -14,7 +15,7 @@ function PaginationComponents({ url, totalBlogs, perPage }) {
           disabled={page === 1}
           onClick={() => route.push(`${url}?page=${page - 1}`)}
         >
-          &larr;
+          <FaCircleArrowLeft style={{ margin: "auto", color: "#289dd2" }} />
         </button>
         {[...Array(totalPage)].map((_ele, index) => (
           <p
@@ -31,7 +32,7 @@ function PaginationComponents({ url, totalBlogs, perPage }) {
           disabled={totalPage === page}
           onClick={() => route.push(`${url}?page=${page + 1}`)}
         >
-          &rarr;
+          <FaArrowCircleRight style={{ margin: "auto", color: "#289dd2" }} />
         </button>
       </div>
     </div>

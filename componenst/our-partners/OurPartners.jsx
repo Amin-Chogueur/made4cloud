@@ -1,5 +1,6 @@
 import Image from "next/image";
 import styles from "./ourPratners.module.css";
+
 function OurPartners() {
   return (
     <div className={styles.content}>

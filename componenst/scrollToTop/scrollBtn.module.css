@@ -1,0 +1,15 @@
+.scrollBtnContainer {
+  position: fixed;
+  bottom: 20px;
+  right: 10px;
+  z-index: 30px;
+  transition: 0.5s;
+}
+.hide {
+  right: -50px;
+  transition: right 0.5s;
+}
+.scrollBtnContainer button {
+  color: var(--main);
+  font-size: 28px;
+}

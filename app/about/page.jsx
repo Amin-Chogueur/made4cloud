@@ -3,6 +3,12 @@ import Founder from "@/componenst/aboutComponents/founder/Founder";
 
 import Version from "@/componenst/aboutComponents/version/Version";
 import GetInTouch from "@/componenst/getInTouch/GetInTouch";
+
+export const metadata = {
+  title: "About",
+  description:
+    "We're dedicated to driving tangible results for our clients, as evidenced by our proven track record of successful Salesforce implementations and customizations.",
+};
 const aboutData = [
   {
     title: "Made4Cloud Transforming Tomorrow Since 2020",
@@ -19,6 +25,7 @@ const aboutData = [
     image: "/images/about2.jpg",
   },
 ];
+
 function About() {
   return (
     <div style={{ marginTop: "50px" }}>

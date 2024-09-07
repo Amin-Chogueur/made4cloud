@@ -8,10 +8,12 @@
   box-sizing: border-box;
 }
 :root {
-  --btn: #3673fb;
-  --testOne: #62ddd6;
-  --testTwo: #41c1ba;
+  --secondary: #62ddd6;
   --main: #289dd2;
   --btn: #1d4355;
   --newMain: #1d4355;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
 }
