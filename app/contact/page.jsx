@@ -1,6 +1,7 @@
 import styles from "./contact.module.css";
 import { GiPositionMarker } from "react-icons/gi";
 import { FaPhoneAlt } from "react-icons/fa";
+import ContactForm from "@/componenst/contactForm/ContactForm";
 export const metadata = {
   title: "Contact",
   description: ` Have questions, or ready to embark on a digital transformation journey with Made4Cloud? We’re here to help! Reach out to us through the channels below, and let’s start a conversation about how we can
@@ -68,14 +69,7 @@ function Contact() {
             </ul>
           </div>
         </div>
-
-        <form className={styles.form}>
-          <input type="text" placeholder="Name..." />
-          <input type="email" placeholder="Email..." required />
-          <input type="text" placeholder="Phone..." />
-          <textarea placeholder="Message..." required />
-          <button>Send Message</button>
-        </form>
+        <ContactForm />
       </div>
     </div>
   );

@@ -28,13 +28,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: var(--btn);
+  background-color: #ddd;
   border-radius: 10px;
-  color: white;
+  color: black;
   cursor: pointer;
   width: 30px;
+  font-weight: 600;
 }
 .indexCurrentPage {
-  background-color: var(--main);
-  color: white;
+  color: var(--main);
+  font-weight: 700;
 }

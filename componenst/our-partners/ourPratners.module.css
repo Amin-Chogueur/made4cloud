@@ -1,5 +1,5 @@
 .content {
-  background: linear-gradient(to top, var(--secondary), #ffffff);
+  background: var(--secondary);
   display: flex;
   flex-direction: column;
   justify-content: center;

@@ -109,7 +109,7 @@ function Footer() {
         </div>
       </div>
       <div className={styles.copyRight}>
-        Copyright © 2024 <strong>Made4Cloud</strong>. All rights reserved.
+        Copyright © 2024 <strong>Made4Cloud LTD</strong>. All rights reserved.
       </div>
     </footer>
   );

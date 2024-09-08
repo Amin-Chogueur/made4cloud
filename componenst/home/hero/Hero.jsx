@@ -1,6 +1,8 @@
 import Link from "next/link";
 import styles from "./hero.module.css";
 import Image from "next/image";
+
+import NumberCounter from "@/componenst/counter/Counter";
 function Hero() {
   return (
     <div className={styles.heroContainer}>
@@ -20,12 +22,17 @@ function Hero() {
         </div>
         <div className={styles.statistic}>
           <div className={styles.box}>
-            <h3>12+</h3>
+            <h3 style={{ display: "flex" }}>
+              <NumberCounter num={15} />+
+            </h3>
             <span />
             <p>Clients</p>
           </div>
           <div className={styles.box}>
-            <h3>20+</h3>
+            <h3 style={{ display: "flex" }}>
+              {" "}
+              <NumberCounter num={20} />+
+            </h3>
             <span />
             <p>Projects</p>
           </div>

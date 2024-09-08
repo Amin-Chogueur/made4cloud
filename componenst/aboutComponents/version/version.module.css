@@ -1,5 +1,5 @@
 .versionContianer {
-  background-image: linear-gradient(to top, var(--main), #ffffff);
+  background-color: var(--secondary);
 }
 .container {
   width: 80%;

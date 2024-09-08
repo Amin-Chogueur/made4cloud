@@ -40,7 +40,7 @@ function Carousel() {
     <div className={styles.sliderContainer}>
       <button onClick={handleLeftBtn}>
         <FaArrowAltCircleLeft
-          className={currentSlide === 0 ? styles.hide : ""}
+          className={currentSlide === 0 ? styles.hide : styles.arrow}
         />
       </button>
       {sliderData.map((slide, i) => (
@@ -75,7 +75,7 @@ function Carousel() {
         </div>
       ))}
       <button
-        className={currentSlide === sliderData.length - 1 ? styles.hide : ""}
+        className={currentSlide === sliderData.length - 1 ? styles.hide : styles.arrow}
         onClick={handleRightBtn}
       >
         <FaArrowCircleRight />

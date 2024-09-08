@@ -20,12 +20,10 @@
 .sliderContainer button:first-of-type {
   left: -5px;
   font-size: 20px;
-  color: var(--main);
 }
 .sliderContainer button:last-of-type {
   right: -10px;
   font-size: 20px;
-  color: var(--main);
 }
 
 .slide .content p:nth-child(2) {
@@ -60,13 +58,16 @@
 }
 .slide {
   padding: 30px 10px;
-  background-image: linear-gradient(to bottom, #ddd, white);
+  background-color: white;
   max-width: 600px;
   transition: 1s;
   display: flex;
   flex-direction: column;
   gap: 30px;
   border-radius: 20px;
+}
+.arrow {
+  color: var(--main);
 }
 @media (max-width: 768px) {
   .sliderContainer {

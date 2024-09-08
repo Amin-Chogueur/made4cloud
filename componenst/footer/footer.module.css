@@ -4,7 +4,7 @@
   align-items: center;
   gap: 40px;
   padding: 60px 40px;
-  background-color: #eee;
+  border-top: 2px solid #ddd;
 }
 .footer .desc {
   flex: 1;
