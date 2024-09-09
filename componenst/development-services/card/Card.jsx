@@ -3,7 +3,9 @@ import styles from "./card.module.css";
 function Card({ content }) {
   return (
     <div className={styles.card}>
-      <Image src={content.image} alt="card" width={310} height={300} />
+      <div className={styles.imageContainer}>
+        <Image src={content.image} alt="card" width={260} height={260} />
+      </div>
       <div className={styles.content}>
         <h3>{content.title}</h3>
         <p>{content.description}</p>

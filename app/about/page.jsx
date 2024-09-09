@@ -22,7 +22,6 @@ const aboutData = [
     description:
       "Welcome to Made4Cloud, where innovation meets technology. Established in 2022 in the heart of Paris, we've been on a relentless journey, pioneering digital solutions that define the future.",
     buttonContent: "Join the dream team!",
-    image: "/images/about2.jpg",
   },
 ];
 

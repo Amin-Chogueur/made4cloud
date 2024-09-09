@@ -16,6 +16,7 @@
 .content p:first-of-type {
   font-weight: 500;
   font-size: 18px;
+  color: white;
 }
 .content p:last-of-type {
   font-size: 18px;
@@ -24,7 +25,7 @@
 .content h2 {
   font-size: 35px;
   line-height: 1.2;
-  color: var(--main);
+  color: white;
   margin: 20px 0;
 }
 @media (max-width: 768px) {

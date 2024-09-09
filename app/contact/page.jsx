@@ -34,7 +34,7 @@ function Contact() {
                 <br />
                 WC2H 9JQ
                 <br />
-                London
+                London, UK
               </p>
               <h3>Paris Office</h3>
               <p>
@@ -49,7 +49,7 @@ function Contact() {
                 <br />
                 75011
                 <br />
-                Paris
+                Paris, France
               </p>
             </div>
           </div>

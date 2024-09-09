@@ -17,9 +17,11 @@ function AboutFirst({ data }) {
             <Link href={"/contact"}>{data.buttonContent}</Link>
           </button>
         </div>
-        <div className={styles.imageContainer}>
-          <Image loading="lazy" fill alt="about image" src={data.image} />
-        </div>
+        {data.image && (
+          <div className={styles.imageContainer}>
+            <Image fill alt={data.title} src={data.image} />
+          </div>
+        )}
       </div>
     </div>
   );

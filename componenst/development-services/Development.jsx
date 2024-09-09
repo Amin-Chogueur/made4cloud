@@ -3,61 +3,87 @@ import styles from "./development.module.css";
 export const cardContent = [
   {
     title: "Sales Cloud ",
-    image: "/images/c1.jpg",
+    image:
+      "https://www.salesforce.com/content/dam/web/global/svg-icons/service-day.svg",
     description:
       "Empowers sales teams with a 360-degree view of customers, automates tasks to improve efficiency, and provides insights to close more deals.",
     buttonContent: "Get Started!",
   },
   {
-    title: "Service Cloud",
-    image: "/images/c2.jpg",
-    description:
-      "Helps sales professionals by providing visibility into customer support history, identifying upsell and cross-sell opportunities, and fostering customer loyalty, which can lead to repeat business.",
-    buttonContent: "Get Started!",
-    directionStyles: "left",
-  },
-  {
-    title: "Experience Cloud",
-    image: "/images/c3.jpg",
-    description:
-      " Create personalized portals for prospects and customers, share relevant content, accelerate the sales process, and improve customer engagement.",
-    buttonContent: "Get Started!",
-  },
-  {
     title: "B2B commerce Cloud",
-    image: "/images/c4.jpg",
+    image:
+      "https://www.salesforce.com/content/dam/web/global/svg-icons/commerce-day.svg",
     description:
       " Integrates with Sales Cloud, providing sales reps with real-time visibility into customer orders, purchase history, and preferences, enabling them to tailor their sales approach.",
     buttonContent: "Get Started!",
     directionStyles: "left",
   },
   {
-    title: "CloudCraze",
-    image: "/images/c5.jpg",
+    title: "Service Cloud",
+    image:
+      "https://www.salesforce.com/content/dam/web/global/svg-icons/sales-day.svg",
     description:
-      " We provide expertise in evolving CloudCraze implementations, resolving bugs, and facilitating smooth transitions to the B2B Lightning platform.",
+      "Helps sales professionals by providing visibility into customer support history, identifying upsell and cross-sell opportunities, and fostering customer loyalty, which can lead to repeat business.",
     buttonContent: "Get Started!",
   },
   {
+    title: "Experience Cloud",
+    image: "https://vectorified.com/images/salesforce-cloud-icon-16.png",
+    description:
+      " Create personalized portals for prospects and customers, share relevant content, accelerate the sales process, and improve customer engagement.",
+    buttonContent: "Get Started!",
+    directionStyles: "left",
+  },
+
+  {
     title: "B2C Commerce Cloud",
-    image: "/images/c6.jpg",
+    image:
+      "https://www.salesforce.com/content/dam/web/global/svg-icons/commerce-day.svg",
     description:
       " While primarily focused on the online shopping experience, B2C Commerce Cloud data can provide insights into consumer behavior and preferences, which sales teams can leverage for targeted marketing and sales efforts.",
-    directionStyles: "left",
+
     buttonContent: "Get Started!",
   },
   {
     title: "Conga",
-    image: "/images/c1.jpg",
+    image:
+      "https://vectorseek.com/wp-content/uploads/2023/08/Conga.-Logo-Vector.svg-.png",
     description:
       "Configuring Conga sign and composer to align with your specific document templates, data fields, and business processes.",
     buttonContent: "Get Started!",
+    directionStyles: "left",
   },
   {
     title: "Field Service Lightning",
-    image: "/images/c2.jpg",
+    image:
+      "https://play-lh.googleusercontent.com/5ebpO0x3iKOPYL5r2S6TXS6UPITF2B9eMMEuo4x7kvbbuYXZObVbxDUu9U1WBIjqQw",
     description:
       "Improve customer satisfaction and efficiency with our Field Service solutions. Technicians get real-time access to customer info, work orders, and inventory, while automated scheduling ensures timely job assignments. Mobile tools enable job updates, signatures, and invoicing for faster service and better customer experiences.",
+    buttonContent: "Get Started!",
+  },
+  {
+    title: "Data Cloud",
+    image:
+      "https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder29.svg",
+    description:
+      "We specialize in Salesforce Data Cloud integration, unifying your data sources for enhanced insights and decision-making. Our solutions enable real-time analysis, predictive modeling, and personalized customer experiences, driving growth and operational efficiency.",
+    buttonContent: "Get Started!",
+    directionStyles: "left",
+  },
+  {
+    title: "Slack",
+    image:
+      "https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder13.svg",
+    description:
+      "Our Slack integration services for Salesforce boost collaboration and productivity. We create custom integrations that connect your CRM with team communications, enabling real-time updates, automated notifications, and instant access to customer information within Slack, improving teamwork and customer satisfaction.",
+    buttonContent: "Get Started!",
+  },
+  {
+    title: "CloudCraze",
+    image:
+      "https://www.walkersands.com/wp-content/uploads/2019/11/47fcb3e1-b8de-4276-a388-1381ae4493a4.png",
+    description:
+      " We provide expertise in evolving CloudCraze implementations, resolving bugs, and facilitating smooth transitions to the B2B Lightning platform.",
     buttonContent: "Get Started!",
     directionStyles: "left",
   },

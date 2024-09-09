@@ -19,6 +19,12 @@ function OurPartners() {
             alt="ornikar logo"
           />
           <Image
+            src="https://www.sgd-pharma.com/themes/sgdpharma/medias/images/sgd-pharma-logo.svg"
+            alt="SGD Pharma Image"
+            width={80}
+            height={80}
+          />
+          <Image
             src="https://pbs.twimg.com/profile_images/876737517093081088/VMdSmUMe_400x400.jpg"
             width={70}
             height={70}

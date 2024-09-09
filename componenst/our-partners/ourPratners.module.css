@@ -9,12 +9,13 @@
   font-size: 35px;
   text-align: center;
   margin-bottom: 20px;
-  color: var(--main);
+  color: white;
   font-weight: 600;
 }
 .content p {
   padding: 0 160px;
   text-align: center;
+  color: white;
 }
 
 /* HorizontalScroll.module.css */

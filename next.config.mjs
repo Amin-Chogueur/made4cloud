@@ -37,6 +37,36 @@ const nextConfig = {
         hostname: "cdn.cookielaw.org",
         pathname: "/**",
       },
+      {
+        protocol: "https",
+        hostname: "www.sgd-pharma.com",
+        pathname: "/themes/sgdpharma/medias/images/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.salesforce.com",
+        pathname: "/content/dam/web/global/svg-icons/**",
+      },
+      {
+        protocol: "https",
+        hostname: "vectorified.com",
+        pathname: "/images/**",
+      },
+      {
+        protocol: "https",
+        hostname: "play-lh.googleusercontent.com",
+        pathname: "/**",
+      },
+      {
+        protocol: "https",
+        hostname: "vectorseek.com",
+        pathname: "/wp-content/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.walkersands.com",
+        pathname: "/wp-content/uploads/**",
+      },
     ],
   },
 };

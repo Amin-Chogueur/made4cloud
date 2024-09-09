@@ -4,6 +4,8 @@ const blogData = [
     title: "Generating PDFs with jsPDF in Lightning Web Components (LWC)",
     category: "LWC",
     image: "/images/c1.jpg",
+    author: "Satyam Parasa",
+    date: "Sep 5, 2024",
     description: `
     <p>In this guide, we will explore how to generate PDFs using the <strong>jsPDF</strong> library in Lightning Web Components (LWC).</p>
     
@@ -57,14 +59,15 @@ import { loadScript } from 'lightning/platformResourceLoader';
 
     <p>This example gives a high-level overview of how to integrate jsPDF in LWC components.</p>
   `,
-    author: "Satyam Parasa",
-    date: "Sep 5, 2024",
   },
   {
     id: "2",
-    category: "Salesforce Admin",
+    category: "AI",
     image: "/images/c2.jpg",
     title: "Introduction to Einstein Copilot",
+    subCategory: " ",
+    author: "Venkat Sumanth Guduru",
+    date: "Aug 15, 2024",
     description: `
         <p>Salesforce Einstein Copilot, with its robust standard actions and customizable capabilities, is transforming the way businesses interact with their CRM. Join us to explore Einstein Copilot Standard and Custom Actions.</p>
         <p>Salesforce Einstein Copilot is a groundbreaking AI-powered assistant designed to seamlessly integrate into the Salesforce interface, enabling users to perform tasks through conversational interactions. This AI-driven tool is more than just a chatbot; it’s a powerful assistant that can execute business tasks, streamline workflows, and provide intelligent insights. In this post, we’ll dive deep into the two types of actions that drive Einstein Copilot—standard and custom actions—and how they can be leveraged to enhance your Salesforce experience.</p>
@@ -151,14 +154,15 @@ import { loadScript } from 'lightning/platformResourceLoader';
         <h2>Conclusion</h2>
         <p>Salesforce Einstein Copilot, with its robust standard actions and customizable capabilities, is transforming the way businesses interact with their CRM. By understanding and leveraging both standard and custom actions, organizations can optimize workflows, enhance productivity, and create a more intuitive user experience. Whether you’re automating routine tasks or developing complex workflows, Einstein Copilot is a powerful tool that can drive significant value for your business.</p>
       `,
-    subCategory: " ",
-    author: "Venkat Sumanth Guduru",
-    date: "Aug 15, 2024",
   },
   {
     id: "3",
-    category: "Salesforce Developer",
+    category: "Apex",
     image: "/images/c3.jpg",
+    subCategory: " ",
+    title: "Bulkification of Apex Triggers",
+    author: "Sheima Latha",
+    date: "Aug 8, 2024",
     description: `
        <p>As a leading CRM platform, Salesforce allows extensive customization to meet diverse business needs. One such powerful feature of Salesforce is Apex Triggers, which are used to perform operations before or after record modifications. However, to ensure optimal performance and avoid hitting governor limits, it’s crucial to understand and implement bulkification of triggers. This article will delve into the concept of bulkification, its importance, and how to implement it with practical examples.</p>
         <p>Bulkification refers to the practice of designing Apex code to handle multiple records at once, rather than one record at a time. This approach is essential in Salesforce due to the platform’s multi-tenant architecture, where resources are shared among many users. Governor limits are set to ensure no single user monopolizes shared resources. Bulkification helps in adhering to these limits and ensures that your code runs efficiently even when processing large data volumes.</p>
@@ -240,15 +244,14 @@ import { loadScript } from 'lightning/platformResourceLoader';
         <h2>Conclusion</h2>
         <p>Bulkification is a fundamental concept in Salesforce Apex programming, crucial for maintaining the performance and scalability of your applications. By following best practices such as using collections, avoiding SOQL/DML in loops, and efficient querying, you can ensure your triggers are optimized and compliant with Salesforce governor limits. Implementing these practices not only enhances the performance of your code but also ensures a seamless experience for users as your data volume grows.</p>
       `,
-
-    subCategory: " ",
-    title: "Bulkification of Apex Triggers",
-    author: "Sheima Latha",
-    date: "Aug 8, 2024",
   },
   {
     id: "4",
-    category: "Salesforce Admin",
+    category: "Sales Cloud",
+    subCategory: " ",
+    title: "Exploring Sales Cloud in Salesforce: Features & Uses",
+    author: "Gobinath A",
+    date: "Jul 3, 2024",
     image: "/images/c4.jpg",
     description: `<p>Sales Cloud is the top product in Salesforce. It boosts sales teams a lot. Teams using it see sales rise by an average of 30%. What is Sales Cloud in Salesforce? It’s a big help for managing sales. It makes sales work smoother, increases productivity, and gets better results. No matter what type of sales team you are, Sales Cloud helps. It gives you the right tools to succeed. Join us to Exploring Sales Cloud in Salesforce with features & Uses.
 
@@ -382,15 +385,15 @@ Sales Cloud lets you manage leads and pipelines well. You get smart AI insights.
     <p>Sales Cloud has everything sales teams need to up their game, like AI insights and automation. Its ease of use and options let different types of companies benefit. Salesforce Sales Cloud stands out as a top choice, giving salespeople the edge in a tough market.</P>
 
   `,
-    subCategory: " ",
-    title: "Exploring Sales Cloud in Salesforce: Features & Uses",
-    author: "Gobinath A",
-    date: "Jul 3, 2024",
   },
   {
     id: "5",
-    category: "Salesforce Admin",
+    category: "B2B Commerce",
     image: "/images/c5.jpg",
+    subCategory: " ",
+    title: "Lightning Web Runtime (LWR)",
+    author: "Ravi Teja",
+    date: "Jan 4, 2024",
     description: `
     <p>Lightning Web Runtime (LWR) empowers you to craft digital experiences tailored to the rigorous demands of contemporary web applications, encompassing scalability, security, and peak performance. At its core, LWR offers a versatile and unbiased approach to configuring and loading essential modules, services, and dependency providers essential for JavaScript app development. Its flexibility extends to deployment across diverse runtime environments, allowing adaptation to specific use cases. Whether integrated seamlessly into a local Node.js runtime or deployed as a standalone instance on platforms like Heroku, LWR ensures a robust and adaptable foundation for your application.</p>
     <h2>The architecture of LWR (Lightning Web Runtime)</h2>
@@ -435,15 +438,15 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
       </li>
     </ol>
     `,
-    subCategory: " ",
-    title: "Lightning Web Runtime (LWR)",
-    author: "Ravi Teja",
-    date: "Jan 4, 2024",
   },
   {
     id: "6",
-    category: "Salesforce Admin",
+    category: "Apex",
     image: "/images/c1.jpg",
+    subCategory: " ",
+    title: "How to Write Test Cases?",
+    author: "Sheima Latha",
+    date: "May 16, 2024",
     description: `
     <p>Test cases play a vital role in the quality of the system functionalities by verifying that all functionalities are properly incorporated. Let’s explore how to write effective test cases. Join us to learn about how to write test cases in Salesforce.</p>
     <h2>What is a Test Case?</h2>
@@ -490,77 +493,15 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
         <h3>So Far, We Learnt</h3>
         <p>We learned the concept of test cases and how to write them effectively along with a few examples. By following best practices and guidelines for test case writing, one can save time and resources in the long run, reduce the risk of errors, and improve the overall user experience.</p>
       `,
-    subCategory: " ",
-    title: "How to Write Test Cases?",
-    author: "Sheima Latha",
-    date: "May 16, 2024",
   },
   {
     id: "7",
-    category: "Salesforce Developer",
+    category: "Apex",
     image: "/images/c2.jpg",
-    description: `<p>Join us to learn about how to avoid DML from For Loop in Salesforce? To avoid DML (Data Manipulation Language) statements inside a for loop in Salesforce, you can use the bulk update technique. This technique involves creating a list of records that need to be updated and then updating them all at once outside the for loop.</p>
-    <h2>Why DML should not be written inside for loop?</h2>
-    <p>
-      The well-known Salesforce governor limit concerns the number of DML operations in a single transaction. As per the docs, the limit is 150.
-    </p>
-    <p>
-      Here is one simple code that will give you the “Too Many DML Statements: 151” error.
-    </p>
-    <pre>
-      <code>
-        for (Integer i = 0; i < 150; i++){    
-          Account accountObject = new Account();  
-          accountObject.Name = 'Test ' + i;    
-          insert accountObject;
-        }
-      </code>
-    </pre>
-    <h3>How to fix Too Many DML Statements: 151</h3>
-    <p>
-      You should not use a DML statement inside for loops. Instead, leverage collections to store the data, and then when you do a DML operation on a collection, it only counts as one DML!
-    </p>
-    <pre>
-      <code>
-        List&lt;Account&gt; accountList = new List&lt;Account&gt;();
-        for (Integer i = 0; i < 150; i++){    
-          Account accountObject = new Account();  
-          accountObject.Name = ‘Test ‘ + i;  
-          accountList.add(accountObject);  
-        }
-        insert accountList;
-      </code>
-    </pre>
-    <p>
-      In the example above, we first create an empty list called <code>accountList</code>. Then, we loop through all the accounts and update their names. Instead of updating each account inside the loop, we add them to the <code>accountList</code> list. After the loop, we update all the accounts in the <code>accountList</code> list in a single DML statement outside the loop.
-    </p>
-    <p>
-      This avoids the DML statement inside the for loop, which can cause performance issues and governor limit exceptions in Salesforce. By using the bulk update technique, you can improve the efficiency and performance of your code in Salesforce.
-    </p>
-    <h3>How to avoid DML from For Loop in Salesforce</h3>
-    <p>
-      There are a few other solutions you can follow to fix the DML inside for loop issue:
-    </p>
-    <ul>
-      <li><strong>Bulkify your code:</strong> The first principle is writing code for multiple records simultaneously. We should write scalable code and avoid hitting the governor limit.</li>
-      <li><strong>Use Collection:</strong> You can use List and MAP in Salesforce to avoid SOQL and DML inside the for loop.</li>
-      <li><strong>Follow Salesforce Apex Best Practices:</strong> Learn about Salesforce Apex best practices to avoid any governor limit in Salesforce.</li>
-    </ul>
-    <p>Learn more about different types of exceptions in Salesforce.</p>
-    <h3>What is the DML limit in Salesforce flow?</h3>
-    <p>
-      The total number of DML statements issued is 150 in flow, and the total number of records processed due to DML statements is 10,000. Learn more <a href="#">here</a>.
-    </p>`,
-
     subCategory: " ",
-    title: "Avoid DML from For Loop in Salesforce",
-    author: "Hema",
-    date: "Dec 11, 2023",
-  },
-  {
-    id: "8",
-    category: "Salesforce Developer",
-    image: "/images/c4.jpg",
+    title: "Ultimate Salesforce Best Practices Guide",
+    author: "Amit Chaudhary",
+    date: "Nov 13, 2023",
     description: ` <p>Salesforce is a powerful and versatile platform, but like any technology, it’s important to follow best practices to ensure success. Join us to learn about Salesforce Implementation tips & tricks and best practices in the Software development life cycle. Here are some Salesforce best practices to keep in mind.</p>
     <h2>What is Salesforce’s Best Practices?</h2>
     <p>Salesforce best practices are guidelines that help ensure the success and optimal use of the Salesforce platform. They cover various aspects of Salesforce, including data management, customization, security, governance, training, and testing. Here are some key Salesforce best practices to keep in mind:</p>
@@ -672,15 +613,15 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
     <p>By following these best practices, you can help ensure your Salesforce implementation is successful and delivers value to your organization.</p>
 
 `,
-    subCategory: " ",
-    title: "Ultimate Salesforce Best Practices Guide",
-    author: "Amit Chaudhary",
-    date: "Nov 13, 2023",
   },
   {
-    id: "9",
-    category: "B2B",
+    id: "8",
+    category: "CloudCraze",
     image: "/images/c6.jpg",
+    subCategory: " ",
+    title: "Global Extension Point Classes for B2B Commerce for Visualforce",
+    author: "",
+    date: "",
     description: `<p>B2B Commerce for Visualforce provides several global extension points: Apex classes that are called from other code in the managed package and execute specific business logic for certain storefront functionality. For example, several extension point classes define behavior for loading data during checkout.</p>
     <h3>Note</h3>
     <p>Some extension point classes are deprecated, but are still available in the managed package for compatibility with legacy subscriber code.</p>
@@ -712,15 +653,15 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
     </ul>
 
 `,
-    subCategory: " ",
-    title: "Global Extension Point Classes for B2B Commerce for Visualforce",
-    author: "",
-    date: "",
   },
   {
-    id: "10",
-    category: "Salesforce Developer",
+    id: "9",
+    category: "Apex",
     image: "/images/c5.jpg",
+    subCategory: " ",
+    title: "Avoid DML from For Loop in Salesforce",
+    author: "Hema",
+    date: "Dec 11, 2023 ",
     description: `<p>Join us to learn about how to avoid DML from For Loop in Salesforce? To avoid DML (Data Manipulation Language) statements inside a for loop in Salesforce, you can use the bulk update technique. This technique involves creating a list of records that need to be updated and then updating them all at once outside the for loop.</p>
     <h1>Why DML should not be written inside for loop?</h1>
     <p>The well-known Salesforce governor limit concerns the number of DML operations in a single transaction. As per the docs, the limit is 150.</p>
@@ -767,15 +708,15 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
     <p>DML statements should not be used inside loops. Learn different ways to overcome Salesforce Governor Limits using Platform Events.</p>
 
 `,
-    subCategory: " ",
-    title: "Avoid DML from For Loop in Salesforce",
-    author: "Hema",
-    date: "Dec 11, 2023 ",
   },
   {
-    id: "11",
-    category: "Salesforce Developer",
+    id: "10",
+    category: "Apex",
     image: "/images/c2.jpg",
+    subCategory: " ",
+    title: "Fundamentals of Apex for Salesforce: A Starter’s Tutorial",
+    author: "Gobinath A",
+    date: "Feb 8, 2024",
     description: ` <p>Apex is a powerful programming language used in Salesforce for developing custom applications and automating business processes. This tutorial aims to provide beginners with a solid understanding of the core fundamentals of Apex coding, including key concepts and syntax. Let’s start the Understanding the Core Fundamentals of Apex for Salesforce: A Starter’s Tutorial.</p>
     <h2>Key Takeaways</h2>
     <ul>
@@ -841,66 +782,6 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
       helping beginners build powerful Salesforce applications.
     </p>
 `,
-    subCategory: " ",
-    title: "Fundamentals of Apex for Salesforce: A Starter’s Tutorial",
-    author: "Gobinath A",
-    date: "Feb 8, 2024",
-  },
-  {
-    id: "12",
-    category: "apex",
-    image: "/images/c5.jpg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit neque odio corporis sequi, ipsam illum rerum quisquam unde aspernatur placeat voluptas. Nobis cumque incidunt laudantium quia explicabo natus excepturi! Eaque quis placeat aliquam alias, maxime reiciendis fuga. Illo voluptatem earum maxime ullam fugit laborum ab atque laudantium neque sequi reiciendis perspiciatis nesciunt quia cupiditate nemo libero incidunt rem temporibus magnam pariatur, ipsum iste quaerat quos ducimus. Doloribus, aut blanditiis autem tempora nihil quo culpa eos quam delectus asperiores minus, adipisci, temporibus eius? Ipsa earum minus sed culpa, quaerat ea aliquam cumque amet unde. Nostrum non, fuga, cumque iusto voluptatibus architecto tempora eos vel quia recusandae cum, delectus sed molestias nisi aspernatur quo impedit ipsum unde blanditiis obcaecati facere vero! Neque aliquid voluptatum ex, possimus quia ut tenetur, quod officia odio explicabo iure, perspiciatis architecto! Minus cumque eligendi laudantium architecto ratione omnis, alias deleniti quam sapiente hic vel fugiat ab ex nesciunt praesentium assumenda commodi, provident officia rerum quasi! Nisi eveniet quis tempore accusantium ex distinctio, rerum esse doloribus illum! Quidem non itaque expedita qui, molestias ut pariatur reiciendis quam aperiam repellendus sequi, velit deserunt reprehenderit cupiditate voluptatum modi odio necessitatibus. Sit ipsum saepe officia vel accusamus, amet minus sequi consequuntur porro inventore dolorem eligendi cumque laborum veniam. Libero veniam, at eos porro quisquam quis recusandae hic magnam culpa totam dolores harum maxime distinctio officiis quod esse, impedit adipisci? Eius temporibus maiores impedit assumenda eum ducimus expedita, nisi repellat ipsum quidem quos nesciunt laboriosam exercitationem aut adipisci deleniti iste repellendus numquam modi tempora suscipit maxime molestias eos facilis. Ut iusto nulla illum, eligendi repellat nisi odit deserunt voluptates autem fugiat distinctio natus eaque placeat? Culpa inventore amet quibusdam suscipit laudantium alias voluptate quae, nesciunt nam illum quis cupiditate odio. Sint itaque hic sit beatae fugit non saepe et atque nobis! Quisquam.",
-    subCategory: "apex one",
-    title: "apex one 1 title",
-    author: "Charles Darwin",
-    date: "2024-09-09",
-  },
-  {
-    id: "13",
-    category: "apex",
-    image: "/images/c6.jpg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit neque odio corporis sequi, ipsam illum rerum quisquam unde aspernatur placeat voluptas. Nobis cumque incidunt laudantium quia explicabo natus excepturi! Eaque quis placeat aliquam alias, maxime reiciendis fuga. Illo voluptatem earum maxime ullam fugit laborum ab atque laudantium neque sequi reiciendis perspiciatis nesciunt quia cupiditate nemo libero incidunt rem temporibus magnam pariatur, ipsum iste quaerat quos ducimus. Doloribus, aut blanditiis autem tempora nihil quo culpa eos quam delectus asperiores minus, adipisci, temporibus eius? Ipsa earum minus sed culpa, quaerat ea aliquam cumque amet unde. Nostrum non, fuga, cumque iusto voluptatibus architecto tempora eos vel quia recusandae cum, delectus sed molestias nisi aspernatur quo impedit ipsum unde blanditiis obcaecati facere vero! Neque aliquid voluptatum ex, possimus quia ut tenetur, quod officia odio explicabo iure, perspiciatis architecto! Minus cumque eligendi laudantium architecto ratione omnis, alias deleniti quam sapiente hic vel fugiat ab ex nesciunt praesentium assumenda commodi, provident officia rerum quasi! Nisi eveniet quis tempore accusantium ex distinctio, rerum esse doloribus illum! Quidem non itaque expedita qui, molestias ut pariatur reiciendis quam aperiam repellendus sequi, velit deserunt reprehenderit cupiditate voluptatum modi odio necessitatibus. Sit ipsum saepe officia vel accusamus, amet minus sequi consequuntur porro inventore dolorem eligendi cumque laborum veniam. Libero veniam, at eos porro quisquam quis recusandae hic magnam culpa totam dolores harum maxime distinctio officiis quod esse, impedit adipisci? Eius temporibus maiores impedit assumenda eum ducimus expedita, nisi repellat ipsum quidem quos nesciunt laboriosam exercitationem aut adipisci deleniti iste repellendus numquam modi tempora suscipit maxime molestias eos facilis. Ut iusto nulla illum, eligendi repellat nisi odit deserunt voluptates autem fugiat distinctio natus eaque placeat? Culpa inventore amet quibusdam suscipit laudantium alias voluptate quae, nesciunt nam illum quis cupiditate odio. Sint itaque hic sit beatae fugit non saepe et atque nobis! Quisquam.",
-    subCategory: "apex one",
-    title: "apex one 2 title",
-    author: "Charles Darwin",
-    date: "2024-09-09",
-  },
-  {
-    id: "14",
-    category: "apex",
-    image: "/images/c1.jpg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit neque odio corporis sequi, ipsam illum rerum quisquam unde aspernatur placeat voluptas. Nobis cumque incidunt laudantium quia explicabo natus excepturi! Eaque quis placeat aliquam alias, maxime reiciendis fuga. Illo voluptatem earum maxime ullam fugit laborum ab atque laudantium neque sequi reiciendis perspiciatis nesciunt quia cupiditate nemo libero incidunt rem temporibus magnam pariatur, ipsum iste quaerat quos ducimus. Doloribus, aut blanditiis autem tempora nihil quo culpa eos quam delectus asperiores minus, adipisci, temporibus eius? Ipsa earum minus sed culpa, quaerat ea aliquam cumque amet unde. Nostrum non, fuga, cumque iusto voluptatibus architecto tempora eos vel quia recusandae cum, delectus sed molestias nisi aspernatur quo impedit ipsum unde blanditiis obcaecati facere vero! Neque aliquid voluptatum ex, possimus quia ut tenetur, quod officia odio explicabo iure, perspiciatis architecto! Minus cumque eligendi laudantium architecto ratione omnis, alias deleniti quam sapiente hic vel fugiat ab ex nesciunt praesentium assumenda commodi, provident officia rerum quasi! Nisi eveniet quis tempore accusantium ex distinctio, rerum esse doloribus illum! Quidem non itaque expedita qui, molestias ut pariatur reiciendis quam aperiam repellendus sequi, velit deserunt reprehenderit cupiditate voluptatum modi odio necessitatibus. Sit ipsum saepe officia vel accusamus, amet minus sequi consequuntur porro inventore dolorem eligendi cumque laborum veniam. Libero veniam, at eos porro quisquam quis recusandae hic magnam culpa totam dolores harum maxime distinctio officiis quod esse, impedit adipisci? Eius temporibus maiores impedit assumenda eum ducimus expedita, nisi repellat ipsum quidem quos nesciunt laboriosam exercitationem aut adipisci deleniti iste repellendus numquam modi tempora suscipit maxime molestias eos facilis. Ut iusto nulla illum, eligendi repellat nisi odit deserunt voluptates autem fugiat distinctio natus eaque placeat? Culpa inventore amet quibusdam suscipit laudantium alias voluptate quae, nesciunt nam illum quis cupiditate odio. Sint itaque hic sit beatae fugit non saepe et atque nobis! Quisquam.",
-    subCategory: "apex two",
-    title: "apex two 1 title",
-    author: "Charles Darwin",
-    date: "2024-09-09",
-  },
-
-  {
-    id: "30",
-    category: "apex",
-    image: "/images/c5.jpg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit neque odio corporis sequi, ipsam illum rerum quisquam unde aspernatur placeat voluptas. Nobis cumque incidunt laudantium quia explicabo natus excepturi! Eaque quis placeat aliquam alias, maxime reiciendis fuga. Illo voluptatem earum maxime ullam fugit laborum ab atque laudantium neque sequi reiciendis perspiciatis nesciunt quia cupiditate nemo libero incidunt rem temporibus magnam pariatur, ipsum iste quaerat quos ducimus. Doloribus, aut blanditiis autem tempora nihil quo culpa eos quam delectus asperiores minus, adipisci, temporibus eius? Ipsa earum minus sed culpa, quaerat ea aliquam cumque amet unde. Nostrum non, fuga, cumque iusto voluptatibus architecto tempora eos vel quia recusandae cum, delectus sed molestias nisi aspernatur quo impedit ipsum unde blanditiis obcaecati facere vero! Neque aliquid voluptatum ex, possimus quia ut tenetur, quod officia odio explicabo iure, perspiciatis architecto! Minus cumque eligendi laudantium architecto ratione omnis, alias deleniti quam sapiente hic vel fugiat ab ex nesciunt praesentium assumenda commodi, provident officia rerum quasi! Nisi eveniet quis tempore accusantium ex distinctio, rerum esse doloribus illum! Quidem non itaque expedita qui, molestias ut pariatur reiciendis quam aperiam repellendus sequi, velit deserunt reprehenderit cupiditate voluptatum modi odio necessitatibus. Sit ipsum saepe officia vel accusamus, amet minus sequi consequuntur porro inventore dolorem eligendi cumque laborum veniam. Libero veniam, at eos porro quisquam quis recusandae hic magnam culpa totam dolores harum maxime distinctio officiis quod esse, impedit adipisci? Eius temporibus maiores impedit assumenda eum ducimus expedita, nisi repellat ipsum quidem quos nesciunt laboriosam exercitationem aut adipisci deleniti iste repellendus numquam modi tempora suscipit maxime molestias eos facilis. Ut iusto nulla illum, eligendi repellat nisi odit deserunt voluptates autem fugiat distinctio natus eaque placeat? Culpa inventore amet quibusdam suscipit laudantium alias voluptate quae, nesciunt nam illum quis cupiditate odio. Sint itaque hic sit beatae fugit non saepe et atque nobis! Quisquam.",
-    subCategory: "apex two",
-    title: "apex two 2 title",
-    author: "Charles Darwin",
-    date: "2024-09-09",
-  },
-  {
-    id: "31",
-    category: "apex",
-    image: "/images/c5.jpg",
-    description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit neque odio corporis sequi, ipsam illum rerum quisquam unde aspernatur placeat voluptas. Nobis cumque incidunt laudantium quia explicabo natus excepturi! Eaque quis placeat aliquam alias, maxime reiciendis fuga. Illo voluptatem earum maxime ullam fugit laborum ab atque laudantium neque sequi reiciendis perspiciatis nesciunt quia cupiditate nemo libero incidunt rem temporibus magnam pariatur, ipsum iste quaerat quos ducimus. Doloribus, aut blanditiis autem tempora nihil quo culpa eos quam delectus asperiores minus, adipisci, temporibus eius? Ipsa earum minus sed culpa, quaerat ea aliquam cumque amet unde. Nostrum non, fuga, cumque iusto voluptatibus architecto tempora eos vel quia recusandae cum, delectus sed molestias nisi aspernatur quo impedit ipsum unde blanditiis obcaecati facere vero! Neque aliquid voluptatum ex, possimus quia ut tenetur, quod officia odio explicabo iure, perspiciatis architecto! Minus cumque eligendi laudantium architecto ratione omnis, alias deleniti quam sapiente hic vel fugiat ab ex nesciunt praesentium assumenda commodi, provident officia rerum quasi! Nisi eveniet quis tempore accusantium ex distinctio, rerum esse doloribus illum! Quidem non itaque expedita qui, molestias ut pariatur reiciendis quam aperiam repellendus sequi, velit deserunt reprehenderit cupiditate voluptatum modi odio necessitatibus. Sit ipsum saepe officia vel accusamus, amet minus sequi consequuntur porro inventore dolorem eligendi cumque laborum veniam. Libero veniam, at eos porro quisquam quis recusandae hic magnam culpa totam dolores harum maxime distinctio officiis quod esse, impedit adipisci? Eius temporibus maiores impedit assumenda eum ducimus expedita, nisi repellat ipsum quidem quos nesciunt laboriosam exercitationem aut adipisci deleniti iste repellendus numquam modi tempora suscipit maxime molestias eos facilis. Ut iusto nulla illum, eligendi repellat nisi odit deserunt voluptates autem fugiat distinctio natus eaque placeat? Culpa inventore amet quibusdam suscipit laudantium alias voluptate quae, nesciunt nam illum quis cupiditate odio. Sint itaque hic sit beatae fugit non saepe et atque nobis! Quisquam.",
-    subCategory: "apex two",
-    title: "apex two 3 title",
-    author: "Charles Darwin",
-    date: "2024-09-09",
   },
 ];
 

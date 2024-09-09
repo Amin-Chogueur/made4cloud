@@ -9,7 +9,7 @@ import Image from "next/image";
 const sliderData = [
   {
     id: "1",
-    image: "/images/Nicolas.jpeg",
+    image: "/images/nicolas.png",
     description:
       " Since joining our team, Anes has demonstrated an exceptional ability to quickly adapt to our structure, as well as that of my client, and to deeply understand the specifics of his role. With his capacity to grasp complex business contexts and propose innovative solutions, along with his attentive listening skills and ability to identify even the vaguest of issues, Anes has successfully combined his strengths to effectively meet our needs. His commitment to finding suitable solutions and his ability to apply his knowledge to achieve objectives are remarkable. I highly recommend him for his expertise, skills, and the added value he brings to our organization.",
     auther: "Nicolas",
@@ -17,7 +17,7 @@ const sliderData = [
   },
   {
     id: "2",
-    image: "/images/Yann.jpeg",
+    image: "/images/yann.png",
     description:
       " Anes is a delivery expert. He can effectively manage various tasks and projects, even with limited guidance. He is a trustworthy person who works independently. ",
     auther: "Yann",
@@ -75,7 +75,9 @@ function Carousel() {
         </div>
       ))}
       <button
-        className={currentSlide === sliderData.length - 1 ? styles.hide : styles.arrow}
+        className={
+          currentSlide === sliderData.length - 1 ? styles.hide : styles.arrow
+        }
         onClick={handleRightBtn}
       >
         <FaArrowCircleRight />
