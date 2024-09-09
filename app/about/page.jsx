@@ -28,7 +28,7 @@ const aboutData = [
 
 function About() {
   return (
-    <div style={{ marginTop: "50px" }}>
+    <div style={{ marginTop: "120px" }}>
       <AboutFirst data={aboutData[0]} />
       <Version />
       <Founder />
