@@ -15,7 +15,8 @@
 .content p {
   padding: 0 160px;
   text-align: center;
-  color: white;
+  color: #222;
+  font-size: 18px;
 }
 
 /* HorizontalScroll.module.css */

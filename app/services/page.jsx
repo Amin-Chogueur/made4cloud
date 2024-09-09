@@ -8,7 +8,18 @@ export const metadata = {
 };
 function Services() {
   return (
-    <div style={{ marginTop: "50px" }}>
+    <div>
+      <h1
+        style={{
+          marginTop: "100px",
+          textAlign: "center",
+          color: "var(--main)",
+          fontSize: "45px",
+          fontWeight: "800",
+        }}
+      >
+        Our Services
+      </h1>
       {cardContent.map((card, i) => {
         return <AboutFirst key={i} data={card} />;
       })}

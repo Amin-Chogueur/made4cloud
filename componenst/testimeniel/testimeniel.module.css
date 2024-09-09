@@ -16,7 +16,7 @@
 .content p:first-of-type {
   font-weight: 500;
   font-size: 18px;
-  color: white;
+  color: #222;
 }
 .content p:last-of-type {
   font-size: 18px;
