@@ -5,9 +5,18 @@ import Version from "@/componenst/aboutComponents/version/Version";
 import GetInTouch from "@/componenst/getInTouch/GetInTouch";
 
 export const metadata = {
-  title: "About",
+  title: "About Made4Cloud Ltd | CloudCraze Experts & Cloud Service Providers",
   description:
-    "We're dedicated to driving tangible results for our clients, as evidenced by our proven track record of successful Salesforce implementations and customizations.",
+    "Learn about Made4Cloud Ltd, a leading provider of CloudCraze and cloud-based business solutions, specializing in B2B Commerce, Sales Cloud, Service Cloud, and more.",
+  keywords: [
+    "About Made4Cloud Ltd",
+    "CloudCraze",
+    "cloud experts",
+    "B2B Commerce",
+    "Sales Cloud",
+    "Service Cloud",
+    "cloud services provider",
+  ],
 };
 const aboutData = [
   {

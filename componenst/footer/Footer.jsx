@@ -6,6 +6,7 @@ import { FaPhoneAlt } from "react-icons/fa";
 import { IoLogoFacebook } from "react-icons/io";
 import { FaLinkedin } from "react-icons/fa";
 import styles from "./footer.module.css";
+
 function Footer() {
   return (
     <footer>

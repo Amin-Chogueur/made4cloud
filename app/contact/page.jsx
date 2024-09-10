@@ -3,9 +3,18 @@ import { GiPositionMarker } from "react-icons/gi";
 import { FaPhoneAlt } from "react-icons/fa";
 import ContactForm from "@/componenst/contactForm/ContactForm";
 export const metadata = {
-  title: "Contact",
-  description: ` Have questions, or ready to embark on a digital transformation journey with Made4Cloud? We’re here to help! Reach out to us through the channels below, and let’s start a conversation about how we can
-  empower your business with innovative technology solutions.`,
+  title: "Contact Made4Cloud Ltd | CloudCraze & Cloud Services Support",
+  description:
+    "Get in touch with Made4Cloud Ltd for expert CloudCraze, B2B Commerce, and cloud solution services. We’re here to help you with Sales Cloud, Service Cloud, and more.",
+  keywords: [
+    "Contact Made4Cloud Ltd",
+    "CloudCraze support",
+    "cloud services contact",
+    " B2B Commerce",
+    " Sales Cloud",
+    "Service Cloud",
+    " cloud solutions inquiry",
+  ],
 };
 function Contact() {
   return (

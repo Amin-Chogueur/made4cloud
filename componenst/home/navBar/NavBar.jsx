@@ -6,6 +6,7 @@ import styles from "./navbar.module.css";
 import { HiBars3BottomRight } from "react-icons/hi2";
 import { useEffect, useState } from "react";
 import { usePathname } from "next/navigation";
+
 function NavBar() {
   const pathName = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);

@@ -21,14 +21,16 @@ export async function generateMetadata({ params }) {
     // Generate metadata for category page
     const categorie = params.slug[0].replace(/-/g, " ");
     metadata = {
-      title: `${categorie} `,
+      title: `${categorie} blog made by Made4Cloud LTD`,
+      description: `Learn more about ${categorie} with Made4Cloud LTD `,
     };
   } else if (slug.length === 2) {
     const categorie = params.slug[0].replace(/-/g, " ");
     const id = params.slug[1];
     const data = await getSinglePost(id);
     metadata = {
-      title: `${data?.title} - ${categorie} `,
+      title: `${data.title} - ${categorie} `,
+      description: `In this blog you will learn more about ${data.title} `,
     };
   }
   return metadata;

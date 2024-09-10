@@ -795,7 +795,12 @@ export const categories = [
 export async function getAllData() {
   return blogData.length;
 }
-
+export async function getBlogs() {
+  return blogData;
+}
+export async function getCategories() {
+  return categories;
+}
 export async function getData({ page = 1, perPage = 6 }) {
   const start = Number(page - 1) * perPage;
   const end = start + perPage;

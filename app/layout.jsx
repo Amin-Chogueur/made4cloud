@@ -5,31 +5,24 @@ import { Poppins } from "next/font/google";
 import ScrollBtn from "@/componenst/scrollToTop/ScrollBtn";
 import Wavy from "@/componenst/waveBackground/Wavy";
 export const metadata = {
-  title: {
-    default:
-      "Home - Made4Cloud LTD, CloudCraze Solutions | Expert Cloud E-Commerce Services",
-    template:
-      "%s - Made4Cloud LTD, CloudCraze Solutions | Expert Cloud E-Commerce Services",
-  },
+  title:
+    "CloudCraze & Cloud Solutions by Made4Cloud Ltd | Leading B2B & Commerce Services",
   description:
-    "Leading CloudCraze solutions provider offering expert e-commerce services for seamless Salesforce integrations and scalable cloud architectures.",
+    "Welcome to Made4Cloud Ltd, your trusted partner for CloudCraze services, B2B Commerce, Sales Cloud, Service Cloud, Experience Cloud, and more. Empower your business with tailored cloud solutions.",
   keywords: [
     "CloudCraze",
-    "Salesforce e-commerce",
     "cloud solutions",
-    "cloud integration",
-    "B2B commerce",
-    "scalable e-commerce",
-    "cloud platform",
-    "digital transformation",
-    "cloud architecture",
-    "sales Cloud",
+    "B2B Commerce",
+    " Sales Cloud",
     "Service Cloud",
     "Experience Cloud",
-    "B2C Commerce Cloud",
+    "Data Cloud",
+    "B2C Commerce",
     "Field Service Lightning",
     "Conga",
+    "Made4Cloud Ltd",
   ],
+
   author: "Made4Cloud LTD",
   robots: "index, follow",
   openGraph: {
@@ -67,7 +60,7 @@ const poppins = Poppins({
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={poppins.className}>
+      <body className={poppins.className} style={{ minHeight: "100vh" }}>
         <Wavy />
         <NavBar />
 
