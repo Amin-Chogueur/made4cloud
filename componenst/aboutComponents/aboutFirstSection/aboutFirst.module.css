@@ -55,15 +55,15 @@
   overflow: hidden;
   border-radius: 10px;
   position: relative;
-  width: 380px;
-  height: 280px;
+  width: 300px;
+  height: 300px;
 }
 .imageContainer img {
   border-radius: 10px;
   transition: 0.5s;
 }
 .imageContainer img:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
 }
 @media (max-width: 768px) {
   .container,

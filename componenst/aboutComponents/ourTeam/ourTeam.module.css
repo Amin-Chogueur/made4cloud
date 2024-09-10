@@ -3,6 +3,8 @@
   margin: auto;
   display: flex;
   padding: 30px 0;
+  gap: 20px;
+  align-items: center;
 }
 .content {
   flex: 1.2;
@@ -14,20 +16,21 @@
   font-weight: 600;
 }
 .content p {
-  font-size: 17px;
+  font-size: 18px;
   padding-right: 40px;
   color: #222;
 }
-.widget {
+.imageContainer {
   flex: 0.8;
 }
+.imageContainer img {
+  margin-left: auto;
+}
 @media (max-width: 768px) {
-  .widget {
-    flex: 0.2;
+  .container {
+    flex-direction: column;
   }
-  .content {
-    flex: 1.8;
-  }
+
   .content p {
     padding-right: 0;
   }

@@ -784,7 +784,14 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
 `,
   },
 ];
-
+export const categories = [
+  "CloudCraze",
+  "Apex",
+  "LWC",
+  "AI",
+  "B2B-Commerce",
+  "Sales-Cloud",
+];
 export async function getAllData() {
   return blogData.length;
 }
@@ -804,17 +811,6 @@ export async function getRelatedPost(categorie, id) {
     (blog) => blog.category === categorie && blog.id != id
   );
   return data.slice(0, 3);
-}
-
-export async function getSubCategorie(subCategorie, page = 1, perPage = 6) {
-  const start = Number(page - 1) * perPage;
-  const end = start + perPage;
-  const dataSubCategorie = blogData.filter(
-    (blog) => blog.subCategory === subCategorie
-  );
-  let dataLength = dataSubCategorie.length;
-  const data = dataSubCategorie.slice(start, end);
-  return { dataLength, data };
 }
 
 export async function getCategorie(categorie, page = 1, perPage = 6) {

@@ -1,4 +1,5 @@
 import styles from "./ourTeam.module.css";
+import Image from "next/image";
 function OurTeam() {
   return (
     <div className={styles.ourTeam}>
@@ -11,7 +12,14 @@ function OurTeam() {
             make our collective vision a reality.
           </p>
         </div>
-        <div className={styles.widget}></div>
+        <div className={styles.imageContainer}>
+          <Image
+            src={"/images/hands.png"}
+            width={300}
+            height={300}
+            alt="our team"
+          />
+        </div>
       </div>
     </div>
   );

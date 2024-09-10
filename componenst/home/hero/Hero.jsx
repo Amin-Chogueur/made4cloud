@@ -42,8 +42,8 @@ function Hero() {
         <Image
           className={styles.image}
           src={"/images/hero.jpg"}
-          width={450}
-          height={450}
+          width={490}
+          height={490}
           alt="hero image"
         />
       </div>

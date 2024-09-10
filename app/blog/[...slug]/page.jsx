@@ -1,15 +1,17 @@
 import Link from "next/link";
 import styles from "./slug.module.css";
+import { redirect } from "next/navigation";
 import SideBar from "@/componenst/blog/sideBar/SideBar";
 import Image from "next/image";
 import {
   getSinglePost,
   getRelatedPost,
-  getSubCategorie,
   getCategorie,
 } from "@/blogData/blogData";
 import PaginationComponents from "@/componenst/pagination/PaginationComponents";
 import GetInTouch from "@/componenst/getInTouch/GetInTouch";
+import { categories } from "@/blogData/blogData";
+
 export async function generateMetadata({ params }) {
   const { slug } = params;
 
@@ -20,21 +22,13 @@ export async function generateMetadata({ params }) {
     const categorie = params.slug[0].replace(/-/g, " ");
     metadata = {
       title: `${categorie} `,
-      description: `this is all about ${categorie}`,
     };
   } else if (slug.length === 2) {
     const categorie = params.slug[0].replace(/-/g, " ");
-    const subCategorie = params.slug[1].replace(/-/g, " ");
-    metadata = {
-      title: `${subCategorie} - ${categorie} `,
-      description: `this is all about ${subCategorie}`,
-    };
-  } else if (slug.length === 3) {
-    const id = params.slug[2];
+    const id = params.slug[1];
     const data = await getSinglePost(id);
     metadata = {
-      title: `${data.title}`,
-      description: data.description.slice(0, 150),
+      title: `${data?.title} - ${categorie} `,
     };
   }
   return metadata;
@@ -43,13 +37,14 @@ export async function generateMetadata({ params }) {
 async function Blog({ params, searchParams }) {
   const perPage = 6;
   const page = searchParams.page;
-  if (params.slug.length === 3) {
+  if (params.slug.length === 2) {
     const categorie = params.slug[0].replace(/-/g, " ");
-    const subCategorie = params.slug[1].replace(/-/g, " ");
-    const id = params.slug[2];
+    const id = params.slug[1];
     const data = await getSinglePost(id);
     const relatedData = await getRelatedPost(categorie, id);
-
+    if (!data) {
+      redirect(`/blog/${categorie}`);
+    }
     return (
       <>
         <div className={styles.backgroundDiv}>
@@ -57,9 +52,7 @@ async function Blog({ params, searchParams }) {
             <SideBar className={styles.sideBar} />
             <div className={`${styles.slugContainer} ${styles.slugPost}`}>
               <div className={styles.singleBlog}>
-                <p className={styles.category}>
-                  {data.category} / {data.subCategory}
-                </p>
+                <p className={styles.category}>{data.category}</p>
                 <div className={styles.imageBigContainer}>
                   {" "}
                   <Image fill src={data.image} alt={data.title} />
@@ -79,9 +72,7 @@ async function Blog({ params, searchParams }) {
                 <div>
                   {relatedData?.map((item) => (
                     <div className={styles.blog} key={item.id}>
-                      <p className={styles.category}>
-                        {item.category} / {item.subCategory}
-                      </p>
+                      <p className={styles.category}>{item.category}</p>
                       <div className={styles.imageContainer}>
                         {" "}
                         <Image fill src={item.image} alt={item.title} />
@@ -96,10 +87,9 @@ async function Blog({ params, searchParams }) {
                       </span>
                       <Link
                         className={styles.readAllLink}
-                        href={`/blog/${categorie.replace(
-                          / /g,
-                          "-"
-                        )}/${subCategorie.replace(/ /g, "-")}/${item.id}`}
+                        href={`/blog/${categorie.replace(/ /g, "-")}/${
+                          item.id
+                        }`}
                       >
                         READ ALL
                       </Link>
@@ -114,100 +104,19 @@ async function Blog({ params, searchParams }) {
       </>
     );
   }
-  ///////////////////////
-  if (params.slug.length === 2) {
-    const categorie = params.slug[0].replace(/-/g, " ");
-    const subCategorie = params.slug[1].replace(/-/g, " ");
-    const { dataLength, data } = await getSubCategorie(
-      subCategorie,
-      page,
-      perPage
-    );
-    return (
-      <>
-        <div className={styles.container}>
-          <SideBar className={styles.sideBar} />
-          <div className={styles.slugContainer}>
-            <h2>
-              {" "}
-              {categorie} {` / ${subCategorie}`}
-            </h2>
-            <div className={styles.allBlogs}>
-              {data.map((item) => (
-                <div className={styles.blog} key={item.id}>
-                  <p className={styles.category}>
-                    {item.category} / {item.subCategory}
-                  </p>
-                  <div className={styles.imageContainer}>
-                    {" "}
-                    <Image fill src={item.image} alt={item.title} />
-                  </div>
-                  <h3>{item.title}</h3>
-                  <div
-                    className={styles.description}
-                    dangerouslySetInnerHTML={{ __html: item.description }}
-                  />
-                  <span>
-                    {item.author} / {item.date}
-                  </span>
-                  <Link
-                    className={styles.readAllLink}
-                    href={`/blog/${categorie.replace(
-                      / /g,
-                      "-"
-                    )}/${subCategorie.replace(/ /g, "-")}/${item.id}`}
-                  >
-                    READ ALL
-                  </Link>
-                </div>
-              ))}
-            </div>
-          </div>
-        </div>
-        <PaginationComponents
-          url={`/blog/${categorie.replace(/ /g, "-")}/${subCategorie.replace(
-            / /g,
-            "-"
-          )}`}
-          totalBlogs={dataLength}
-          perPage={perPage}
-        />
-        <GetInTouch />
-      </>
-    );
-  }
-  ///////////////////////////////
+
   if (params.slug.length === 1) {
     const categorie = params.slug[0].replace(/-/g, " ");
     const { dataLength, data } = await getCategorie(categorie, page, perPage);
-
-    /*const subCat = [
-      ...new Set(
-        data
-          .filter((item) => item.hasOwnProperty("subCategory"))
-          .map((item) => item.subCategory)
-      ),
-    ];*/
+    if (data.length === 0) {
+      redirect("/blog");
+    }
     return (
       <>
         <div className={styles.container}>
           <SideBar className={styles.sideBar} />
           <div className={styles.slugContainer}>
             <h2> {categorie}</h2>
-            {/*<ul className={styles.subCategorieLinks}>
-            {subCat.map((cat) => (
-              <li key={cat.id}>
-                <Link
-                  href={`/blog/${categorie.replace(/ /g, "-")}/${cat.replace(
-                    / /g,
-                    "-"
-                  )}`}
-                >
-                  {cat}
-                </Link>
-              </li>
-            ))}
-          </ul>*/}
             <div className={styles.allBlogs}>
               {data.map((item) => (
                 <div className={styles.blog} key={item.id}>
@@ -228,11 +137,7 @@ async function Blog({ params, searchParams }) {
                   </span>
                   <Link
                     className={styles.readAllLink}
-                    href={`/blog/${categorie.replace(/ /g, "-")}/${
-                      item.subCategory?.replace(/ /g, "-")
-                        ? item.subCategory?.replace(/ /g, "-")
-                        : "no-subcategory"
-                    }/${item.id}`}
+                    href={`/blog/${categorie.replace(/ /g, "-")}/${item.id}`}
                   >
                     READ ALL
                   </Link>

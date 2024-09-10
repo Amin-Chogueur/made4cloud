@@ -8,6 +8,9 @@
   position: relative;
   transition: 0.5s;
 }
+.imageContainer {
+  height: 260px;
+}
 .imageContainer img {
   margin: auto;
 }

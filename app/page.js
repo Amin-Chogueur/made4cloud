@@ -2,7 +2,7 @@ import HomePage from "@/componenst/home/HomePage";
 
 export default function Home() {
   return (
-    <div>
+    <div style={{ minHeight: "100vh" }}>
       <HomePage />
     </div>
   );

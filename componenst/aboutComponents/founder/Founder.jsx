@@ -1,10 +1,18 @@
 import styles from "./founder.module.css";
 import OurTeam from "../ourTeam/OurTeam";
+import Image from "next/image";
 function Founder() {
   return (
     <div className={styles.founder}>
       <div className={styles.container}>
-        <div className={styles.widget}></div>
+        <div className={styles.imageContainer}>
+          <Image
+            src={"/images/co-founder.png"}
+            width={300}
+            height={300}
+            alt="founder"
+          />
+        </div>
         <div className={styles.content}>
           <h2>Founder`s Note</h2>
           <p>

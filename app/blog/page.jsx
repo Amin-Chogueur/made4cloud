@@ -6,7 +6,6 @@ import Image from "next/image";
 import GetInTouch from "@/componenst/getInTouch/GetInTouch";
 import PaginationComponents from "@/componenst/pagination/PaginationComponents";
 
-
 export default async function Blog({ searchParams }) {
   const page = searchParams.page;
   const perPage = 6;
@@ -39,11 +38,7 @@ export default async function Blog({ searchParams }) {
                 </span>
                 <Link
                   className={styles.readAllLink}
-                  href={`/blog/${data.category.replace(/ /g, "-")}/${
-                    data.subCategory?.replace(/ /g, "-")
-                      ? data.subCategory?.replace(/ /g, "-")
-                      : "no-subcategory"
-                  }/${data.id}`}
+                  href={`/blog/${data.category.replace(/ /g, "-")}/${data.id}`}
                 >
                   READ ALL
                 </Link>

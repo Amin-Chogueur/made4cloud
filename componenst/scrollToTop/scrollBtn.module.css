@@ -4,12 +4,11 @@
   right: 10px;
   z-index: 30px;
   transition: 0.5s;
+  color: var(--main);
+  font-size: 28px;
 }
 .hide {
   right: -50px;
   transition: right 0.5s;
-}
-.scrollBtnContainer button {
-  color: var(--main);
-  font-size: 28px;
+  visibility: hidden;
 }

@@ -29,8 +29,11 @@ function ScrollBtn() {
   }, []);
 
   return (
-    <div className={isScrolled ? styles.scrollBtnContainer : styles.hide}>
-      <button onClick={scrollToTop}>
+    <div>
+      <button
+        className={isScrolled ? styles.scrollBtnContainer : styles.hide}
+        onClick={scrollToTop}
+      >
         <FaCircleArrowUp />
       </button>
     </div>

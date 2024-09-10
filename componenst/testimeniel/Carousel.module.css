@@ -1,14 +1,13 @@
 .sliderContainer {
   display: grid;
   grid-template-columns: repeat(2, 50%);
-  width: 100%;
+  width: fit-content;
   gap: 10px;
   border-radius: 20px;
   position: relative;
   margin: auto;
   overflow: hidden;
 }
-
 .sliderContainer button {
   padding: 10px 20px;
   border-radius: 20px;

@@ -3,14 +3,7 @@ import { useState } from "react";
 import styles from "./sideBar.module.css";
 import Link from "next/link";
 import { MdKeyboardDoubleArrowDown } from "react-icons/md";
-const categories = [
-  "CloudCraze",
-  "Apex",
-  "LWC",
-  "AI",
-  "B2B-Commerce",
-  "Sales-Cloud",
-];
+import { categories } from "@/blogData/blogData";
 function SideBar() {
   const [showCategories, setShoCategories] = useState(false);
   function handleShowCategories() {
