@@ -1,5 +1,3 @@
-import Wavy from "@/componenst/waveBackground/Wavy";
-
 export const metadata = {
   title:
     "Made4Cloud Ltd Blog | Insights on CloudCraze, B2B Commerce, and Cloud Solutions",
@@ -16,10 +14,5 @@ export const metadata = {
   ],
 };
 export default function BlogsLayout({ children }) {
-  return (
-    <div>
-      <Wavy />
-      {children}
-    </div>
-  );
+  return <div>{children}</div>;
 }
