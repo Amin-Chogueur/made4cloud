@@ -1,6 +1,6 @@
 import styles from "./blog.module.css";
 import Link from "next/link";
-import { getData, getAllData } from "@/blogData/blogData";
+import { getData, getAllData, getBlogs } from "@/blogData/blogData";
 import SideBar from "@/componenst/blog/sideBar/SideBar";
 import Image from "next/image";
 import GetInTouch from "@/componenst/getInTouch/GetInTouch";

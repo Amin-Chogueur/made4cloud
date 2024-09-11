@@ -1,5 +1,6 @@
 import styles from "./testimeniel.module.css";
 import Carousel from "./Carousel";
+import Wavy from "@/componenst/waveBackground/Wavy";
 
 function Testimeniel() {
   return (
@@ -15,6 +16,7 @@ function Testimeniel() {
         </div>
         <Carousel />
       </div>
+      <Wavy />
     </div>
   );
 }

@@ -10,7 +10,6 @@ import {
 } from "@/blogData/blogData";
 import PaginationComponents from "@/componenst/pagination/PaginationComponents";
 import GetInTouch from "@/componenst/getInTouch/GetInTouch";
-import { categories } from "@/blogData/blogData";
 
 export async function generateMetadata({ params }) {
   const { slug } = params;

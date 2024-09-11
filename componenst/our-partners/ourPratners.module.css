@@ -4,6 +4,7 @@
   flex-direction: column;
   justify-content: center;
   padding: 40px;
+  position: relative;
 }
 .content h2 {
   font-size: 35px;

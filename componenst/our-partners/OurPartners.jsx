@@ -1,6 +1,6 @@
 import Image from "next/image";
 import styles from "./ourPratners.module.css";
-
+import Wavy from "@/componenst/waveBackground/Wavy";
 function OurPartners() {
   return (
     <div className={styles.content}>
@@ -83,6 +83,7 @@ function OurPartners() {
           />
         </div>
       </div>
+      <Wavy />
     </div>
   );
 }

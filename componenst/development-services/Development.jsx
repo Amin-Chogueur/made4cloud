@@ -2,6 +2,15 @@ import Card from "./card/Card";
 import styles from "./development.module.css";
 export const cardContent = [
   {
+    title: "CloudCraze",
+    image:
+      "https://www.walkersands.com/wp-content/uploads/2019/11/47fcb3e1-b8de-4276-a388-1381ae4493a4.png",
+    description:
+      " We provide expertise in evolving CloudCraze implementations, resolving bugs, and facilitating smooth transitions to the B2B Lightning platform.",
+    buttonContent: "Get Started!",
+    directionStyles: "left",
+  },
+  {
     title: "Sales Cloud ",
     image:
       "https://www.salesforce.com/content/dam/web/global/svg-icons/service-day.svg",
@@ -77,15 +86,6 @@ export const cardContent = [
     description:
       "Our Slack integration services for Salesforce boost collaboration and productivity. We create custom integrations that connect your CRM with team communications, enabling real-time updates, automated notifications, and instant access to customer information within Slack, improving teamwork and customer satisfaction.",
     buttonContent: "Get Started!",
-  },
-  {
-    title: "CloudCraze",
-    image:
-      "https://www.walkersands.com/wp-content/uploads/2019/11/47fcb3e1-b8de-4276-a388-1381ae4493a4.png",
-    description:
-      " We provide expertise in evolving CloudCraze implementations, resolving bugs, and facilitating smooth transitions to the B2B Lightning platform.",
-    buttonContent: "Get Started!",
-    directionStyles: "left",
   },
 ];
 function Development() {

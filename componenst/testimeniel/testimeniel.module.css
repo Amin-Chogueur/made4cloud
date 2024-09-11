@@ -1,5 +1,6 @@
 .container {
   background-color: var(--secondary);
+  position: relative;
 }
 .reviews {
   width: 80%;

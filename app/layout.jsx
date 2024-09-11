@@ -3,7 +3,6 @@ import NavBar from "../componenst/home/navBar/NavBar";
 import Footer from "@/componenst/footer/Footer";
 import { Poppins } from "next/font/google";
 import ScrollBtn from "@/componenst/scrollToTop/ScrollBtn";
-import Wavy from "@/componenst/waveBackground/Wavy";
 export const metadata = {
   title:
     "CloudCraze & Cloud Solutions by Made4Cloud Ltd | Leading B2B & Commerce Services",
@@ -61,9 +60,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={poppins.className} style={{ minHeight: "100vh" }}>
-        <Wavy />
         <NavBar />
-
         <div>{children}</div>
         <ScrollBtn />
         <Footer />
