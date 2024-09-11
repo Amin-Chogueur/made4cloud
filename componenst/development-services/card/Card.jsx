@@ -8,7 +8,12 @@ function Card({ content }) {
         <h3>{content.title}</h3>
       </div>
       <div className={styles.imageContainer}>
-        <Image src={content.image} alt="card" width={260} height={260} />
+        <Image
+          src={content.image}
+          alt={`${content.title} image`}
+          width={220}
+          height={220}
+        />
       </div>
     </Link>
   );

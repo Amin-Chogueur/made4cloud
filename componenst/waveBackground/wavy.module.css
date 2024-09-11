@@ -15,5 +15,5 @@
 }
 
 .customShapeDividerTop1725574060 .shapeFill {
-  fill: #289dd2;
+  fill: var(--main);
 }

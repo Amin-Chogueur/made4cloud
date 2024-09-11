@@ -43,7 +43,7 @@
   height: 100%; /* Expand the background color */
 }
 .imageContainer {
-  height: 270px;
+  height: 250px;
   border-bottom-left-radius: 15px;
   border-bottom-right-radius: 15px;
 }

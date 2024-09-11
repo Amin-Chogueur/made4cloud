@@ -33,10 +33,23 @@
   flex: 1;
   color: #222;
 }
-.footer .content p {
-  font-size: 13px;
+.footer .content a {
+  font-size: 15px;
   color: #222;
   line-height: 1.7;
+}
+.contact ul li {
+  display: flex;
+  margin-bottom: 10px;
+  font-size: 15px;
+  align-items: center;
+  gap: 5px;
+}
+.contact li a.phone {
+  background-color: var(--main);
+  text-align: center;
+  padding: 5px;
+  border-radius: 50%;
 }
 .footer div h3 {
   margin-bottom: 10px;
@@ -53,10 +66,7 @@
 .links li a:hover {
   color: var(--main);
 }
-.contact ul li {
-  margin-bottom: 10px;
-  font-size: 15px;
-}
+
 .copyRight {
   text-align: center;
   padding: 20px;

@@ -4,7 +4,7 @@ const blogData = [
     title: "Generating PDFs with jsPDF in Lightning Web Components (LWC)",
     category: "LWC",
     image: "/images/c1.jpg",
-    author: "Satyam Parasa",
+    author: "Made4Cloud",
     date: "Sep 5, 2024",
     description: `
     <p>In this guide, we will explore how to generate PDFs using the <strong>jsPDF</strong> library in Lightning Web Components (LWC).</p>
@@ -66,7 +66,7 @@ import { loadScript } from 'lightning/platformResourceLoader';
     image: "/images/c2.jpg",
     title: "Introduction to Einstein Copilot",
     subCategory: " ",
-    author: "Venkat Sumanth Guduru",
+    author: "Made4Cloud",
     date: "Aug 15, 2024",
     description: `
         <p>Salesforce Einstein Copilot, with its robust standard actions and customizable capabilities, is transforming the way businesses interact with their CRM. Join us to explore Einstein Copilot Standard and Custom Actions.</p>
@@ -161,7 +161,7 @@ import { loadScript } from 'lightning/platformResourceLoader';
     image: "/images/c3.jpg",
     subCategory: " ",
     title: "Bulkification of Apex Triggers",
-    author: "Sheima Latha",
+    author: "Made4Cloud",
     date: "Aug 8, 2024",
     description: `
        <p>As a leading CRM platform, Salesforce allows extensive customization to meet diverse business needs. One such powerful feature of Salesforce is Apex Triggers, which are used to perform operations before or after record modifications. However, to ensure optimal performance and avoid hitting governor limits, it’s crucial to understand and implement bulkification of triggers. This article will delve into the concept of bulkification, its importance, and how to implement it with practical examples.</p>
@@ -250,7 +250,7 @@ import { loadScript } from 'lightning/platformResourceLoader';
     category: "Sales Cloud",
     subCategory: " ",
     title: "Exploring Sales Cloud in Salesforce: Features & Uses",
-    author: "Gobinath A",
+    author: "Made4Cloud",
     date: "Jul 3, 2024",
     image: "/images/c4.jpg",
     description: `<p>Sales Cloud is the top product in Salesforce. It boosts sales teams a lot. Teams using it see sales rise by an average of 30%. What is Sales Cloud in Salesforce? It’s a big help for managing sales. It makes sales work smoother, increases productivity, and gets better results. No matter what type of sales team you are, Sales Cloud helps. It gives you the right tools to succeed. Join us to Exploring Sales Cloud in Salesforce with features & Uses.
@@ -392,7 +392,7 @@ Sales Cloud lets you manage leads and pipelines well. You get smart AI insights.
     image: "/images/c5.jpg",
     subCategory: " ",
     title: "Lightning Web Runtime (LWR)",
-    author: "Ravi Teja",
+    author: "Made4Cloud",
     date: "Jan 4, 2024",
     description: `
     <p>Lightning Web Runtime (LWR) empowers you to craft digital experiences tailored to the rigorous demands of contemporary web applications, encompassing scalability, security, and peak performance. At its core, LWR offers a versatile and unbiased approach to configuring and loading essential modules, services, and dependency providers essential for JavaScript app development. Its flexibility extends to deployment across diverse runtime environments, allowing adaptation to specific use cases. Whether integrated seamlessly into a local Node.js runtime or deployed as a standalone instance on platforms like Heroku, LWR ensures a robust and adaptable foundation for your application.</p>
@@ -445,7 +445,7 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
     image: "/images/c1.jpg",
     subCategory: " ",
     title: "How to Write Test Cases?",
-    author: "Sheima Latha",
+    author: "Made4Cloud",
     date: "May 16, 2024",
     description: `
     <p>Test cases play a vital role in the quality of the system functionalities by verifying that all functionalities are properly incorporated. Let’s explore how to write effective test cases. Join us to learn about how to write test cases in Salesforce.</p>
@@ -500,7 +500,7 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
     image: "/images/c2.jpg",
     subCategory: " ",
     title: "Ultimate Salesforce Best Practices Guide",
-    author: "Amit Chaudhary",
+    author: "Made4Cloud",
     date: "Nov 13, 2023",
     description: ` <p>Salesforce is a powerful and versatile platform, but like any technology, it’s important to follow best practices to ensure success. Join us to learn about Salesforce Implementation tips & tricks and best practices in the Software development life cycle. Here are some Salesforce best practices to keep in mind.</p>
     <h2>What is Salesforce’s Best Practices?</h2>
@@ -620,8 +620,8 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
     image: "/images/c6.jpg",
     subCategory: " ",
     title: "Global Extension Point Classes for B2B Commerce for Visualforce",
-    author: "",
-    date: "",
+    author: "Made4Cloud",
+    date: "May 26, 2024",
     description: `<p>B2B Commerce for Visualforce provides several global extension points: Apex classes that are called from other code in the managed package and execute specific business logic for certain storefront functionality. For example, several extension point classes define behavior for loading data during checkout.</p>
     <h3>Note</h3>
     <p>Some extension point classes are deprecated, but are still available in the managed package for compatibility with legacy subscriber code.</p>
@@ -660,7 +660,7 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
     image: "/images/c5.jpg",
     subCategory: " ",
     title: "Avoid DML from For Loop in Salesforce",
-    author: "Hema",
+    author: "Made4Cloud",
     date: "Dec 11, 2023 ",
     description: `<p>Join us to learn about how to avoid DML from For Loop in Salesforce? To avoid DML (Data Manipulation Language) statements inside a for loop in Salesforce, you can use the bulk update technique. This technique involves creating a list of records that need to be updated and then updating them all at once outside the for loop.</p>
     <h1>Why DML should not be written inside for loop?</h1>
@@ -715,7 +715,7 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
     image: "/images/c2.jpg",
     subCategory: " ",
     title: "Fundamentals of Apex for Salesforce: A Starter’s Tutorial",
-    author: "Gobinath A",
+    author: "Made4Cloud",
     date: "Feb 8, 2024",
     description: ` <p>Apex is a powerful programming language used in Salesforce for developing custom applications and automating business processes. This tutorial aims to provide beginners with a solid understanding of the core fundamentals of Apex coding, including key concepts and syntax. Let’s start the Understanding the Core Fundamentals of Apex for Salesforce: A Starter’s Tutorial.</p>
     <h2>Key Takeaways</h2>

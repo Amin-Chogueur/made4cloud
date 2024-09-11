@@ -19,7 +19,9 @@ function AboutFirst({ data }) {
         </div>
 
         <div className={styles.imageContainer}>
-          {data.image && <Image fill alt={data.title} src={data.image} />}
+          {data.image && (
+            <Image width={230} height={230} alt={data.title} src={data.image} />
+          )}
         </div>
       </div>
     </div>

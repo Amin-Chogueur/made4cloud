@@ -51,19 +51,21 @@
 .imageContainer {
   flex: 0.8;
   display: flex;
-  justify-content: end;
-  overflow: hidden;
+  justify-content: center;
   border-radius: 10px;
   position: relative;
-  width: 300px;
-  height: 300px;
+  width: 150px;
+  height: 220px;
+}
+.left .imageContainer {
+  display: flex;
+  justify-content: center;
 }
 .imageContainer img {
-  border-radius: 10px;
   transition: 0.5s;
 }
 .imageContainer img:hover {
-  transform: scale(1.02);
+  transform: scale(1.04);
 }
 @media (max-width: 768px) {
   .container,
@@ -81,9 +83,8 @@
     margin-left: 0;
   }
   .imageContainer {
-    display: block;
     width: 100%;
-    margin-top: 30px;
+    margin-top: 20px;
   }
   .content p {
     padding-right: 0;

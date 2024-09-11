@@ -18,20 +18,32 @@
   line-height: 1.2;
   margin-bottom: 15px;
 }
-.content > p {
+
+.contact ul li {
+  font-size: 14px;
+  color: #222;
+  margin-bottom: 10px;
+}
+.contact ul li a {
+  display: inline-block;
+  background-color: var(--main);
+  margin-right: 5px;
+  text-align: center;
+  line-height: 30px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+.content > a {
   font-size: 17px;
   color: #222;
   margin-bottom: 20px;
 }
-.content .location p {
+.content .location a {
   color: #222;
   font-size: 14px;
   margin-bottom: 10px;
   line-height: 1.7;
-}
-.contact ul li {
-  font-size: 14px;
-  color: #222;
 }
 .contact h3,
 .location h3 {
