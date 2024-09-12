@@ -1,7 +1,7 @@
 import Image from "next/image";
 import styles from "./aboutFirst.module.css";
 import Link from "next/link";
-function AboutFirst({ data }) {
+function AboutFirst({ data, largeImage }) {
   const directionStyles = data?.directionStyles;
   return (
     <div className={styles.aboutFirst}>
@@ -19,9 +19,22 @@ function AboutFirst({ data }) {
         </div>
 
         <div className={styles.imageContainer}>
-          {data.image && (
-            <Image width={230} height={230} alt={data.title} src={data.image} />
-          )}
+          {data.image &&
+            (largeImage ? (
+              <Image
+                width={460}
+                height={380}
+                alt={data.title}
+                src={data.image}
+              />
+            ) : (
+              <Image
+                width={260}
+                height={230}
+                alt={data.title}
+                src={data.image}
+              />
+            ))}
         </div>
       </div>
     </div>

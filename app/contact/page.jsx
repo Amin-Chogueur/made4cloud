@@ -81,8 +81,8 @@ function Contact() {
                       marginRight: "5px",
                     }}
                   />
+                  +33 977 217 620
                 </a>
-                +33 977 217 620
               </li>
               <li>
                 <a
@@ -96,8 +96,8 @@ function Contact() {
                       marginRight: "5px",
                     }}
                   />
+                  Linkedin
                 </a>
-                Linkedin
               </li>
             </ul>
           </div>

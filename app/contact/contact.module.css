@@ -25,14 +25,11 @@
   margin-bottom: 10px;
 }
 .contact ul li a {
-  display: inline-block;
-  background-color: var(--main);
   margin-right: 5px;
   text-align: center;
   line-height: 30px;
   width: 30px;
   height: 30px;
-  border-radius: 50%;
 }
 .content > a {
   font-size: 17px;

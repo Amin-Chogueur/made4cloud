@@ -3,7 +3,6 @@ const blogData = [
     id: "1",
     title: "Generating PDFs with jsPDF in Lightning Web Components (LWC)",
     category: "LWC",
-    image: "/images/c1.jpg",
     author: "Made4Cloud",
     date: "Sep 5, 2024",
     description: `
@@ -63,9 +62,8 @@ import { loadScript } from 'lightning/platformResourceLoader';
   {
     id: "2",
     category: "AI",
-    image: "/images/c2.jpg",
     title: "Introduction to Einstein Copilot",
-    subCategory: " ",
+
     author: "Made4Cloud",
     date: "Aug 15, 2024",
     description: `
@@ -158,7 +156,7 @@ import { loadScript } from 'lightning/platformResourceLoader';
   {
     id: "3",
     category: "Apex",
-    image: "/images/c3.jpg",
+
     subCategory: " ",
     title: "Bulkification of Apex Triggers",
     author: "Made4Cloud",
@@ -248,11 +246,9 @@ import { loadScript } from 'lightning/platformResourceLoader';
   {
     id: "4",
     category: "Sales Cloud",
-    subCategory: " ",
     title: "Exploring Sales Cloud in Salesforce: Features & Uses",
     author: "Made4Cloud",
     date: "Jul 3, 2024",
-    image: "/images/c4.jpg",
     description: `<p>Sales Cloud is the top product in Salesforce. It boosts sales teams a lot. Teams using it see sales rise by an average of 30%. What is Sales Cloud in Salesforce? It’s a big help for managing sales. It makes sales work smoother, increases productivity, and gets better results. No matter what type of sales team you are, Sales Cloud helps. It gives you the right tools to succeed. Join us to Exploring Sales Cloud in Salesforce with features & Uses.
 
 Sales Cloud lets you manage leads and pipelines well. You get smart AI insights. Tools for team collaboration are also there. You can reach customers on various channels. Plus, it helps organize your tasks with a strong to-do list. The main aim is to connect your sales efforts to clear results.</p>
@@ -389,8 +385,6 @@ Sales Cloud lets you manage leads and pipelines well. You get smart AI insights.
   {
     id: "5",
     category: "B2B Commerce",
-    image: "/images/c5.jpg",
-    subCategory: " ",
     title: "Lightning Web Runtime (LWR)",
     author: "Made4Cloud",
     date: "Jan 4, 2024",
@@ -442,8 +436,6 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
   {
     id: "6",
     category: "Apex",
-    image: "/images/c1.jpg",
-    subCategory: " ",
     title: "How to Write Test Cases?",
     author: "Made4Cloud",
     date: "May 16, 2024",
@@ -617,8 +609,6 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
   {
     id: "8",
     category: "CloudCraze",
-    image: "/images/c6.jpg",
-    subCategory: " ",
     title: "Global Extension Point Classes for B2B Commerce for Visualforce",
     author: "Made4Cloud",
     date: "May 26, 2024",
@@ -657,8 +647,7 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
   {
     id: "9",
     category: "Apex",
-    image: "/images/c5.jpg",
-    subCategory: " ",
+
     title: "Avoid DML from For Loop in Salesforce",
     author: "Made4Cloud",
     date: "Dec 11, 2023 ",
@@ -712,8 +701,6 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
   {
     id: "10",
     category: "Apex",
-    image: "/images/c2.jpg",
-    subCategory: " ",
     title: "Fundamentals of Apex for Salesforce: A Starter’s Tutorial",
     author: "Made4Cloud",
     date: "Feb 8, 2024",

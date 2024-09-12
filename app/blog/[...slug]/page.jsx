@@ -53,11 +53,15 @@ async function Blog({ params, searchParams }) {
             <SideBar className={styles.sideBar} />
             <div className={`${styles.slugContainer} ${styles.slugPost}`}>
               <div className={styles.singleBlog}>
-                <p className={styles.category}>{data.category}</p>
                 <div className={styles.imageBigContainer}>
-                  {" "}
-                  <Image fill src={data.image} alt={data.title} />
+                  <h3 className={styles.titleOverLay}>{data.title}</h3>
+                  <Image
+                    fill
+                    src={"/images/blogPicture2.png"}
+                    alt={data.title}
+                  />
                 </div>
+                <p className={styles.category}>{data.category}</p>
                 <h3 className={styles.title}>{data.title}</h3>
                 <div
                   className={styles.description}
@@ -73,11 +77,15 @@ async function Blog({ params, searchParams }) {
                 <div>
                   {relatedData?.map((item) => (
                     <div className={styles.blog} key={item.id}>
-                      <p className={styles.category}>{item.category}</p>
                       <div className={styles.imageContainer}>
-                        {" "}
-                        <Image fill src={item.image} alt={item.title} />
+                        <h3 className={styles.titleOverLay}>{item.title}</h3>
+                        <Image
+                          fill
+                          src={"/images/blogPicture2.png"}
+                          alt={item.title}
+                        />
                       </div>
+                      <p className={styles.category}>{item.category}</p>
                       <h3>{item.title}</h3>
                       <div
                         className={styles.description}
@@ -121,13 +129,15 @@ async function Blog({ params, searchParams }) {
             <div className={styles.allBlogs}>
               {data.map((item) => (
                 <div className={styles.blog} key={item.id}>
-                  <p className={styles.category}>
-                    {item.category} / {item.subCategory}
-                  </p>
                   <div className={styles.imageContainer}>
-                    {" "}
-                    <Image fill src={item.image} alt={item.title} />
+                    <h3 className={styles.titleOverLay}>{item.title}</h3>
+                    <Image
+                      fill
+                      src={"/images/blogPicture2.png"}
+                      alt={item.title}
+                    />
                   </div>
+                  <p className={styles.category}>{item.category}</p>
                   <h3>{item.title}</h3>
                   <div
                     className={styles.description}

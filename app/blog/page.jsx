@@ -22,12 +22,15 @@ export default async function Blog({ searchParams }) {
           <div className={styles.allBlogs}>
             {data.map((data) => (
               <div className={styles.blog} key={data.id}>
-                <p className={styles.category}>{data.category}</p>
-
                 <div className={styles.imageContainer}>
-                  <Image fill src={data.image} alt={data.title} />
+                  <h3 className={styles.titleOverLay}>{data.title}</h3>
+                  <Image
+                    fill
+                    src={"/images/blogPicture2.png"}
+                    alt={data.title}
+                  />
                 </div>
-
+                <p className={styles.category}>{data.category}</p>
                 <h3 className={styles.title}>{data.title}</h3>
                 <div
                   className={styles.description}

@@ -91,8 +91,8 @@ function Footer() {
                       fontSize: "20px",
                     }}
                   />
+                  +33 977 217 620
                 </a>
-                <span>+33 977 217 620</span>
               </li>
               <li>
                 <IoLogoFacebook

@@ -40,7 +40,7 @@ function About() {
   return (
     <div>
       <div style={{ minHeight: "calc(100vh - 120px)", marginTop: "140px" }}>
-        <AboutFirst data={aboutData[0]} />
+        <AboutFirst data={aboutData[0]} largeImage={"large"} />
       </div>
       <Version />
       <Founder />
