@@ -177,7 +177,7 @@
 }
 .readAllLink {
   font-size: 12px;
-  color: var(--main);
+  color: var(--btn);
   text-decoration: underline;
   padding-left: 10px;
 }

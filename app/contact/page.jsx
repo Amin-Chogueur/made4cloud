@@ -21,7 +21,7 @@ function Contact() {
   return (
     <div
       className={styles.contact}
-      style={{ minHeight: "calc(100vh - 120px)", marginTop: "140px" }}
+      style={{ minHeight: "calc(100vh - 120px)", marginTop: "40px" }}
     >
       <div className={styles.contactContainer}>
         <div className={styles.content}>

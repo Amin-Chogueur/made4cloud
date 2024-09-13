@@ -395,7 +395,7 @@ LWR sites consist of three fundamental components: an application driving the si
 Notably, the framework and user interface layer remain static, ensuring rapid page loads upon site publication. During the initial site build, all static content is compiled and securely stored in the Salesforce Content Delivery Network (CDN). This strategic placement in the CDN not only optimizes delivery speed but also brings data geographically closer to visitors. 
 The dynamism of the underlying data layer is preserved, sourced from the Salesforce Platform. Business processes, Salesforce records, and other live data are continuously updated in real-time. The outcome is a website that remains current with the latest information, avoiding delays associated with slow load times and offering an optimal user experience.
 Experience Cloud sites developed using the Aura framework exhibit distinctions from those employing Lightning Web Runtime (LWR). Let’s delve into the primary variances between the two</p>
-    <h1>Streamlined Publishing with LWR</h1>
+    <h2>Streamlined Publishing with LWR</h2>
     <p>Unlike Aura templates, Lightning Web Runtime (LWR) optimizes speed by caching components during site publication, ensuring sub-second content delivery. While Aura dynamically loads components, LWR’s static serving requires a site republish for changes to take effect, offering unparalleled speed in return.</p>
 
     <h2>Authentication Simplified</h2>
