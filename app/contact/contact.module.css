@@ -30,53 +30,25 @@
   line-height: 30px;
   width: 30px;
   height: 30px;
+  font-weight: 700;
 }
 .content > a {
   font-size: 17px;
   color: #222;
   margin-bottom: 20px;
+  font-weight: 700;
 }
 .content .location a {
   color: #222;
   font-size: 14px;
   margin-bottom: 10px;
   line-height: 1.7;
+  font-weight: 700;
 }
 .contact h3,
 .location h3 {
   color: var(--main);
 }
-.form {
-  height: fit-content;
-  flex: 0.8;
-  box-shadow: 0px 1px 4px 1px var(--main);
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  justify-content: center;
-  padding: 20px 10px;
-  border-radius: 10px;
-}
-.form input,
-.form textarea {
-  width: 100%;
-  padding: 3px 10px;
-  outline: none;
-  color: black;
-  border: 1px solid rgb(197, 193, 193);
-  border-radius: 5px;
-}
-.form textarea {
-  min-height: 70px;
-}
-.form button {
-  background-color: var(--btn);
-  color: white;
-  padding: 5px;
-  border-radius: 20px;
-  margin-top: 10px;
-}
-
 @media (max-width: 992px) {
   .contactContainer {
     flex-direction: column;

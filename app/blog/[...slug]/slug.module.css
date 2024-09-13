@@ -27,7 +27,7 @@
   margin-left: auto;
 }
 .slugContainer h1 {
-  color: white;
+  color: #222;
   text-align: center;
   font-size: 25px;
   font-weight: 600;
@@ -176,8 +176,9 @@
   display: block;
 }
 .readAllLink {
-  font-size: 12px;
-  color: var(--btn);
+  font-size: 14px;
+  color: #222;
+  font-weight: 700;
   text-decoration: underline;
   padding-left: 10px;
 }

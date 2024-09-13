@@ -21,7 +21,7 @@ function Founder() {
             excellence and client satisfaction is at the core of everything we
             do. Join us in this transformative adventure.
           </p>
-          <span>By Anas</span>
+          <span>By Anes</span>
         </div>
       </div>
       <OurTeam />

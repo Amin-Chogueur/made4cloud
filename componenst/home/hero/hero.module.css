@@ -1,7 +1,7 @@
 .heroContainer {
   width: 80%;
   margin: auto;
-  margin-top: 70px;
+  margin-top: 50px;
   margin-bottom: 60px;
   display: flex;
   gap: 50px;
@@ -38,7 +38,7 @@
 .btns button {
   background-color: var(--btn);
   border-radius: 30px;
-  color: white;
+  color: #222;
   width: 120px;
   padding: 5px 0;
   transition: 0.5s;
@@ -56,7 +56,10 @@
   display: flex;
   flex-direction: column;
   gap: 5px;
-  font-size: 18px;
+  font-size: 30px;
+}
+.statistic .box P {
+  font-size: 30px;
 }
 .heroImage {
   flex: 1;

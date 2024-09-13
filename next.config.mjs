@@ -1,4 +1,5 @@
 /** @type {import('next').NextConfig} */
+
 const nextConfig = {
   images: {
     remotePatterns: [
@@ -66,6 +67,16 @@ const nextConfig = {
         protocol: "https",
         hostname: "www.walkersands.com",
         pathname: "/wp-content/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "www.salesforceben.com",
+        pathname: "/wp-content/uploads/**",
+      },
+      {
+        protocol: "https",
+        hostname: "tse1.mm.bing.net",
+        pathname: "/**", // Allows images from any path under this domain
       },
     ],
   },

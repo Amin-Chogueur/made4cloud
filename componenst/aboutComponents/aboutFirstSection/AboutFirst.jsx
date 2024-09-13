@@ -19,25 +19,20 @@ function AboutFirst({ data, largeImage }) {
             </Link>
           </button>
         </div>
-
-        <div className={styles.imageContainer}>
-          {data.image &&
-            (largeImage ? (
-              <Image
-                width={460}
-                height={380}
-                alt={data.title}
-                src={data.image}
-              />
-            ) : (
+        {largeImage ? (
+          <Image width={600} height={600} alt={data.title} src={data.image} />
+        ) : (
+          <div className={styles.imageContainer}>
+            {data.image && (
               <Image
                 width={260}
-                height={230}
+                height={260}
                 alt={data.title}
                 src={data.image}
               />
-            ))}
-        </div>
+            )}
+          </div>
+        )}
       </div>
     </div>
   );

@@ -3,7 +3,7 @@ import { NextResponse } from "next/server";
 
 export async function POST(req) {
   try {
-    const { name, email, message, phone, file } = await req.json();
+    const { name, email, message, phone } = await req.json();
 
     // Transporter setup
     const transporter = nodemailer.createTransport({
@@ -21,7 +21,7 @@ export async function POST(req) {
       subject: `Contact form submission from ${name}`,
       text: `Message: ${message}\nPhone: ${phone}`,
 
-      html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Phone:</strong> ${phone}</p><p><strong>Message:</strong> ${message}</p><p>${file}</p>`,
+      html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Phone:</strong> ${phone}</p><p><strong>Message:</strong> ${message}</p>`,
     };
 
     // Send mail

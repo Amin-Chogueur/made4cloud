@@ -97,16 +97,6 @@ function Footer() {
                 </a>
               </li>
               <li>
-                <IoLogoFacebook
-                  style={{
-                    display: "inline",
-                    fontSize: "20px",
-                    marginRight: "5px",
-                  }}
-                />
-                Facebook
-              </li>
-              <li>
                 <a
                   href="https://www.linkedin.com/company/made4cloud-ltd"
                   target="_blank"
@@ -126,7 +116,11 @@ function Footer() {
         </div>
       </div>
       <div className={styles.copyRight}>
-        Copyright © 2024 <strong>Made4Cloud LTD</strong>. All rights reserved.
+        Copyright © 2024{" "}
+        <strong>
+          <Link href={"/"}>Made4Cloud LTD</Link>
+        </strong>
+        . All rights reserved.
       </div>
     </footer>
   );

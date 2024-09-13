@@ -97,6 +97,16 @@ export const cardContent = [
       "Our Slack integration services for Salesforce boost collaboration and productivity. We create custom integrations that connect your CRM with team communications, enabling real-time updates, automated notifications, and instant access to customer information within Slack, improving teamwork and customer satisfaction.",
     buttonContent: "Get Started!",
   },
+  {
+    id: "11",
+    title: "Guidewire",
+    image:
+      "https://tse1.mm.bing.net/th?id=OIP.MBQ5_Uy6u-ZluYOmHmU4mQHaHa&pid=Api&P=0&h=180",
+    description:
+      "Leverage our expertise in implementing Guidewire ClaimCenter and PolicyCenter to streamline your insurance operations. We provide custom development, seamless integration, and tailored solutions to enhance your claims and policy management systems. Our services ensure fast deployment, optimized workflows, and future-ready platforms, helping your business achieve operational excellence.",
+    buttonContent: "Get Started!",
+    directionStyles: "left",
+  },
 ];
 function Development() {
   return (

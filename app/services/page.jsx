@@ -5,7 +5,7 @@ export const metadata = {
   title:
     "CloudCraze & Cloud Services by Made4Cloud Ltd | B2B, Sales, Service, Experience Cloud",
   description:
-    "Explore Made4Cloud Ltd's full range of services, including CloudCraze for B2B Commerce, Slack integrations, Data Cloud, Sales Cloud, Service Cloud, and Conga. Your one-stop solution for cloud-based business management.",
+    "Explore Made4Cloud Ltd's full range of services, including CloudCraze for B2B Commerce, Slack integrations, Data Cloud, Sales Cloud, Service Cloud, and Conga, Guidewire. Your one-stop solution for cloud-based business management.",
   keywords: [
     "CloudCraze services",
     "B2B Commerce",
@@ -17,6 +17,7 @@ export const metadata = {
     "Conga",
     "Field Service Lightning",
     "cloud solutions",
+    "Guidewire",
   ],
 };
 function Services() {

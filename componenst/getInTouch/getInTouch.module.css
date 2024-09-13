@@ -29,7 +29,7 @@
   padding: 10px 20px;
   background-color: var(--btn);
   transition: 0.5s;
-  color: white;
+  color: #222;
   border-radius: 20px;
 }
 .right button:hover {

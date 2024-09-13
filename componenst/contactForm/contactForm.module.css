@@ -23,7 +23,7 @@
 }
 .form button {
   background-color: var(--btn);
-  color: white;
+  color: #222;
   padding: 5px;
   border-radius: 20px;
   margin-top: 10px;

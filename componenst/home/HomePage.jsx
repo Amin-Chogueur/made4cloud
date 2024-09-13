@@ -9,7 +9,9 @@ function HomePage() {
   return (
     <div>
       <Hero />
+
       <OurPartners />
+
       <Development />
       <Testimeniel />
       <GetInTouch />

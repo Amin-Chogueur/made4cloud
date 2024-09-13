@@ -24,7 +24,8 @@ const aboutData = [
     description:
       "We're dedicated to driving tangible results for our clients, as evidenced by our proven track record of successful Salesforce implementations and customizations.",
     buttonContent: "Get Started!",
-    image: "/images/about1.jpg",
+    image:
+      "https://www.salesforceben.com/wp-content/uploads/2024/09/Artboard-6-copy-3.jpg",
   },
   {
     title: "Culture and Values",
@@ -40,7 +41,13 @@ const aboutData = [
 function About() {
   return (
     <div>
-      <div style={{ minHeight: "calc(100vh - 120px)", marginTop: "140px" }}>
+      <div
+        style={{
+          minHeight: "calc(100vh - 120px)",
+          marginTop: "60px",
+          marginBottom: "80px",
+        }}
+      >
         <AboutFirst data={aboutData[0]} largeImage={"large"} />
       </div>
       <Version />

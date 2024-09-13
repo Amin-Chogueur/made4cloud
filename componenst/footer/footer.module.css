@@ -32,6 +32,7 @@
 .location {
   flex: 1;
   color: #222;
+  font-weight: 800;
 }
 .location a {
   color: #222;
@@ -44,6 +45,7 @@
   font-size: 15px;
   align-items: center;
   gap: 5px;
+  font-weight: 800;
 }
 
 .footer div h3 {
@@ -54,6 +56,7 @@
 .links li {
   font-size: 15px;
   margin-bottom: 8px;
+  font-weight: 800;
 }
 .links li a {
   transition: 0.5s;
