@@ -2,6 +2,7 @@ import Card from "./card/Card";
 import styles from "./development.module.css";
 export const cardContent = [
   {
+    id: "1",
     title: "CloudCraze",
     image:
       "https://www.walkersands.com/wp-content/uploads/2019/11/47fcb3e1-b8de-4276-a388-1381ae4493a4.png",
@@ -11,6 +12,7 @@ export const cardContent = [
     directionStyles: "left",
   },
   {
+    id: "2",
     title: "Sales Cloud ",
     image:
       "https://www.salesforce.com/content/dam/web/global/svg-icons/service-day.svg",
@@ -19,6 +21,7 @@ export const cardContent = [
     buttonContent: "Get Started!",
   },
   {
+    id: "3",
     title: "B2B commerce Cloud",
     image:
       "https://www.salesforce.com/content/dam/web/global/svg-icons/commerce-day.svg",
@@ -28,6 +31,7 @@ export const cardContent = [
     directionStyles: "left",
   },
   {
+    id: "4",
     title: "Service Cloud",
     image:
       "https://www.salesforce.com/content/dam/web/global/svg-icons/sales-day.svg",
@@ -36,6 +40,7 @@ export const cardContent = [
     buttonContent: "Get Started!",
   },
   {
+    id: "5",
     title: "Experience Cloud",
     image: "https://vectorified.com/images/salesforce-cloud-icon-16.png",
     description:
@@ -45,6 +50,7 @@ export const cardContent = [
   },
 
   {
+    id: "6",
     title: "B2C Commerce Cloud",
     image:
       "https://www.salesforce.com/content/dam/web/global/svg-icons/commerce-day.svg",
@@ -54,6 +60,7 @@ export const cardContent = [
     buttonContent: "Get Started!",
   },
   {
+    id: "7",
     title: "Conga",
     image:
       "https://vectorseek.com/wp-content/uploads/2023/08/Conga.-Logo-Vector.svg-.png",
@@ -63,6 +70,7 @@ export const cardContent = [
     directionStyles: "left",
   },
   {
+    id: "8",
     title: "Field Service Lightning",
     image:
       "https://play-lh.googleusercontent.com/5ebpO0x3iKOPYL5r2S6TXS6UPITF2B9eMMEuo4x7kvbbuYXZObVbxDUu9U1WBIjqQw",
@@ -71,6 +79,7 @@ export const cardContent = [
     buttonContent: "Get Started!",
   },
   {
+    id: "9",
     title: "Data Cloud",
     image:
       "https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder29.svg",
@@ -80,6 +89,7 @@ export const cardContent = [
     directionStyles: "left",
   },
   {
+    id: "10",
     title: "Slack",
     image:
       "https://www.salesforce.com/content/dam/web/global/svg-icons/placeholder13.svg",

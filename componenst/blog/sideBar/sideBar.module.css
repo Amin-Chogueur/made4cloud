@@ -1,17 +1,19 @@
 .sideBar {
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 100;
   background-color: var(--btn);
   color: white;
-  padding: 80px 20px 0;
+  padding: 40px 20px;
+  width: 220px;
 }
-.sideBar button {
-  font-size: 17px;
+.sticky {
+  position: sticky;
+  top: 70px;
+}
+.sideBar h2 {
+  font-size: 18px;
   color: white;
   padding-bottom: 5px;
   text-align: left;
+  margin-bottom: 40px;
 }
 
 .sideBar ol li a {
@@ -19,7 +21,7 @@
   color: white;
   padding: 5px;
   border-radius: 5px;
-  font-size: 14px;
+  font-size: 15px;
   transition: 0.5s;
 }
 .sideBar ol li a:hover {
@@ -29,28 +31,52 @@
 .firstSubCategorie {
   position: relative;
 }
-.firstSubCategorie,
-.secondSubCategorie {
-  background-color: var(--btn);
-  color: white;
-  max-height: 0;
-  overflow: hidden;
-  transition: max-height 0.5s ease-out;
-  padding-left: 20px;
-  margin-top: 10px;
-}
+
 .sideBar ol li,
 .sideBar ul li {
   margin-bottom: 20px;
 }
-.firstCategorie:hover > .firstSubCategorie {
-  max-height: 200px;
+
+.sideBarPhone {
+  display: none;
 }
-.secondCategorie:hover > .secondSubCategorie {
-  max-height: 200px;
-}
-.firstCategorie a,
-.secondCategorie a {
-  display: flex;
-  gap: 40px;
+
+@media (max-width: 768px) {
+  .sideBar {
+    display: none;
+  }
+  .sideBarPhone {
+    display: block;
+    position: absolute;
+    top: 60px;
+    left: 0;
+    color: white;
+    padding: 10px 10px 5px 10px;
+    width: 170px;
+    background-color: var(--btn);
+    z-index: 100;
+  }
+  .sideBarPhone button {
+    font-size: 14px;
+    color: white;
+    padding-bottom: 5px;
+    text-align: left;
+    margin-bottom: 10px;
+  }
+
+  .sideBarPhone ol li a {
+    text-transform: capitalize;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+    font-size: 15px;
+    transition: 0.5s;
+  }
+  .sideBarPhone ol li,
+  .sideBarPhone ul li {
+    margin-bottom: 20px;
+  }
+  .sideBarPhone ol li a:hover {
+    margin-left: 10px;
+  }
 }

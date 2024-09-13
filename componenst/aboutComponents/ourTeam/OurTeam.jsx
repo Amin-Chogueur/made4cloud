@@ -15,8 +15,8 @@ function OurTeam() {
         <div className={styles.imageContainer}>
           <Image
             src={"/images/hands.png"}
-            width={300}
-            height={300}
+            width={250}
+            height={250}
             alt="our team"
           />
         </div>

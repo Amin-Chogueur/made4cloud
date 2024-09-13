@@ -1,6 +1,6 @@
 .customShapeDividerTop1725574060 {
   position: absolute;
-  bottom: -80px;
+  bottom: -90px;
   left: 0;
   width: 100%;
   overflow: hidden;
@@ -15,5 +15,5 @@
 }
 
 .customShapeDividerTop1725574060 .shapeFill {
-  fill: var(--main);
+  fill: #17aff6;
 }

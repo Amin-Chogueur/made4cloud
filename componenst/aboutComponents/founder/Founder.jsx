@@ -8,8 +8,8 @@ function Founder() {
         <div className={styles.imageContainer}>
           <Image
             src={"/images/co-founder.png"}
-            width={300}
-            height={300}
+            width={250}
+            height={250}
             alt="founder"
           />
         </div>

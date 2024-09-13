@@ -1,9 +1,10 @@
 import Image from "next/image";
 import styles from "./card.module.css";
 import Link from "next/link";
+
 function Card({ content }) {
   return (
-    <Link href={"/services"} className={styles.card}>
+    <a href={`/services#${content.id}`} className={styles.card}>
       <div className={styles.content}>
         <h3>{content.title}</h3>
       </div>
@@ -15,7 +16,7 @@ function Card({ content }) {
           height={220}
         />
       </div>
-    </Link>
+    </a>
   );
 }
 

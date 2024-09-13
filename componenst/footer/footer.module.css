@@ -33,24 +33,19 @@
   flex: 1;
   color: #222;
 }
-.footer .content a {
-  display: flex;
-  gap: 5px;
-  font-size: 15px;
+.location a {
   color: #222;
   line-height: 1.7;
+  margin-right: 15px;
 }
+
 .contact ul li {
-  display: flex;
   margin-bottom: 10px;
   font-size: 15px;
   align-items: center;
   gap: 5px;
 }
-.contact li a.phone {
-  text-align: center;
-  padding: 5px;
-}
+
 .footer div h3 {
   margin-bottom: 10px;
   margin-top: 10px;
@@ -86,6 +81,6 @@
   .footer .content {
     flex-wrap: wrap;
     width: 100%;
-    gap: 10;
+    gap: 0;
   }
 }

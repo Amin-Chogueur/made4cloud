@@ -156,8 +156,6 @@ import { loadScript } from 'lightning/platformResourceLoader';
   {
     id: "3",
     category: "Apex",
-
-    subCategory: " ",
     title: "Bulkification of Apex Triggers",
     author: "Made4Cloud",
     date: "Aug 8, 2024",
@@ -489,8 +487,6 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
   {
     id: "7",
     category: "Apex",
-    image: "/images/c2.jpg",
-    subCategory: " ",
     title: "Ultimate Salesforce Best Practices Guide",
     author: "Made4Cloud",
     date: "Nov 13, 2023",
@@ -647,12 +643,11 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
   {
     id: "9",
     category: "Apex",
-
     title: "Avoid DML from For Loop in Salesforce",
     author: "Made4Cloud",
     date: "Dec 11, 2023 ",
     description: `<p>Join us to learn about how to avoid DML from For Loop in Salesforce? To avoid DML (Data Manipulation Language) statements inside a for loop in Salesforce, you can use the bulk update technique. This technique involves creating a list of records that need to be updated and then updating them all at once outside the for loop.</p>
-    <h1>Why DML should not be written inside for loop?</h1>
+    <h2>Why DML should not be written inside for loop?</h2>
     <p>The well-known Salesforce governor limit concerns the number of DML operations in a single transaction. As per the docs, the limit is 150.</p>
 
     <p>Here is one simple code that will give you the “<strong>Too Many DML Statements: 151</strong>” error.</p>

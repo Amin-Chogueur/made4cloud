@@ -16,9 +16,14 @@ export const navLinks = [
   },
 
   {
-    id: 5,
+    id: 4,
     url: "/blog",
     label: "Blogs",
+  },
+  {
+    id: 5,
+    url: "/career",
+    label: "Career",
   },
   {
     id: 6,

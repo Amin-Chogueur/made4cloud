@@ -88,7 +88,9 @@ function Footer() {
                 <a className={styles.phone} href="tel:+33 977 217 620">
                   <FaPhoneAlt
                     style={{
+                      display: "inline",
                       fontSize: "20px",
+                      marginRight: "5px",
                     }}
                   />
                   +33 977 217 620

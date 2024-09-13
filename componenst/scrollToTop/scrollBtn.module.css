@@ -4,7 +4,7 @@
   right: 10px;
   z-index: 30px;
   transition: 0.5s;
-  color: var(--main);
+  color: var(--btn);
   font-size: 28px;
 }
 .hide {

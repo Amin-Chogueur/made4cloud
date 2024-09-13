@@ -4,7 +4,7 @@ import Link from "next/link";
 function AboutFirst({ data, largeImage }) {
   const directionStyles = data?.directionStyles;
   return (
-    <div className={styles.aboutFirst}>
+    <div className={styles.aboutFirst} id={data.id}>
       <div
         className={`${styles.container} ${directionStyles ? styles.left : ""}`}
       >
@@ -14,7 +14,9 @@ function AboutFirst({ data, largeImage }) {
           <h1>{data.title}</h1>
           <p>{data.description}</p>
           <button>
-            <Link href={"/contact"}>{data.buttonContent}</Link>
+            <Link href={`${data.link ? data.link : "/contact"}`}>
+              {data.buttonContent}
+            </Link>
           </button>
         </div>
 

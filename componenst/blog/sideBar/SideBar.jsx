@@ -11,26 +11,49 @@ function SideBar() {
   }
 
   return (
-    <div className={styles.sideBar}>
-      <button onClick={handleShowCategories}>
-        Blogs Categories
-        <MdKeyboardDoubleArrowDown style={{ margin: "auto" }} />
-      </button>
-      {showCategories && (
-        <ol>
-          <li>
-            <Link href={"/blog"}>All Blogs</Link>
-          </li>
-          {categories.map((category, i) => (
-            <li key={i}>
-              <Link href={`/blog/${category}`}>
-                {category.replace(/-/g, " ")}
-              </Link>
+    <>
+      <div className={styles.sideBar}>
+        <div className={styles.sticky}>
+          <h2>Blogs Categories</h2>
+          {
+            <ol>
+              <li>
+                <Link href={"/blog"}>All Blogs</Link>
+              </li>
+              {categories.map((category, i) => (
+                <li key={i}>
+                  <Link href={`/blog/${category}`}>
+                    {category.replace(/-/g, " ")}
+                  </Link>
+                </li>
+              ))}
+            </ol>
+          }
+        </div>
+      </div>
+
+      <div className={styles.sideBarPhone}>
+        <button onClick={handleShowCategories}>
+          Blogs Categories
+          <MdKeyboardDoubleArrowDown style={{ margin: "auto" }} />
+        </button>
+
+        {showCategories && (
+          <ol>
+            <li>
+              <Link href={"/blog"}>All Blogs</Link>
             </li>
-          ))}
-        </ol>
-      )}
-    </div>
+            {categories.map((category, i) => (
+              <li key={i}>
+                <Link href={`/blog/${category}`}>
+                  {category.replace(/-/g, " ")}
+                </Link>
+              </li>
+            ))}
+          </ol>
+        )}
+      </div>
+    </>
   );
 }
 

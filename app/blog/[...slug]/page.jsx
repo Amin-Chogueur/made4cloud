@@ -50,7 +50,7 @@ async function Blog({ params, searchParams }) {
       <>
         <div className={styles.backgroundDiv}>
           <div className={`${styles.container} ${styles.containerSingleBlog}`}>
-            <SideBar className={styles.sideBar} />
+            <SideBar />
             <div className={`${styles.slugContainer} ${styles.slugPost}`}>
               <div className={styles.singleBlog}>
                 <div className={styles.imageBigContainer}>
@@ -123,9 +123,9 @@ async function Blog({ params, searchParams }) {
     return (
       <>
         <div className={styles.container}>
-          <SideBar className={styles.sideBar} />
+          <SideBar />
           <div className={styles.slugContainer}>
-            <h2> {categorie}</h2>
+            <h1> {categorie}</h1>
             <div className={styles.allBlogs}>
               {data.map((item) => (
                 <div className={styles.blog} key={item.id}>

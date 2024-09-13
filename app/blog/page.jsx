@@ -15,10 +15,10 @@ export default async function Blog({ searchParams }) {
   return (
     <>
       <div className={styles.container}>
-        <SideBar className={styles.sideBar} />
+        <SideBar />
 
         <main className={styles.mainSection}>
-          <h2 className={styles.blogsTitle}>All Blogs </h2>
+          <h1 className={styles.blogsTitle}>All Blogs </h1>
           <div className={styles.allBlogs}>
             {data.map((data) => (
               <div className={styles.blog} key={data.id}>

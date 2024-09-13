@@ -39,7 +39,7 @@
 }
 .content button {
   padding: 5px 20px;
-  background-color: var(--main);
+  background-color: var(--btn);
   border-radius: 20px;
   color: white;
   margin-top: 20px;

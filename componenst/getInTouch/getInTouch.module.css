@@ -1,6 +1,6 @@
 .getContainer {
   width: 80%;
-  margin: auto;
+  margin: 20px auto;
   padding: 80px 0;
   display: flex;
   justify-content: space-between;
@@ -27,7 +27,7 @@
 }
 .right button {
   padding: 10px 20px;
-  background-color: var(--main);
+  background-color: var(--btn);
   transition: 0.5s;
   color: white;
   border-radius: 20px;

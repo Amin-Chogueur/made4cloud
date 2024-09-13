@@ -15,7 +15,7 @@ function PaginationComponents({ url, totalBlogs, perPage }) {
           disabled={page === 1}
           onClick={() => route.push(`${url}?page=${page - 1}`)}
         >
-          <FaCircleArrowLeft style={{ margin: "auto", color: "#289dd2" }} />
+          <FaCircleArrowLeft style={{ margin: "auto", color: "teal" }} />
         </button>
         {[...Array(totalPage)].map((_ele, index) => (
           <p
@@ -32,7 +32,7 @@ function PaginationComponents({ url, totalBlogs, perPage }) {
           disabled={totalPage === page}
           onClick={() => route.push(`${url}?page=${page + 1}`)}
         >
-          <FaArrowCircleRight style={{ margin: "auto", color: "#289dd2" }} />
+          <FaArrowCircleRight style={{ margin: "auto", color: "teal" }} />
         </button>
       </div>
     </div>
