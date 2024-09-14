@@ -1,0 +1,49 @@
+.customShapeDividerTop1725574060 {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+}
+
+.customShapeDividerTop1725574060 svg {
+  position: relative;
+  display: block;
+  width: calc(121% + 1.3px);
+  height: 90px;
+}
+
+.customShapeDividerTop1725574060 .shapeFill {
+  fill: white;
+}
+.customShapeDividerTop1725574060ForMobile {
+  display: none;
+}
+
+@media (max-width: 992px) {
+  .customShapeDividerTop1725574060ForMobile {
+    display: block;
+    position: absolute;
+    top: -30px;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+  }
+
+  .customShapeDividerTop1725574060ForMobile svg {
+    position: relative;
+    display: block;
+    width: calc(121% + 1.3px);
+    height: 90px;
+  }
+
+  .customShapeDividerTop1725574060ForMobile .shapeFill {
+    fill: white;
+  }
+
+  .customShapeDividerTop1725574060 {
+    display: none;
+  }
+}

@@ -8,10 +8,9 @@ import PaginationComponents from "@/componenst/pagination/PaginationComponents";
 
 export default async function Blog({ searchParams }) {
   const page = searchParams.page;
-  const perPage = 6;
   const totalBlogs = await getAllData();
 
-  let data = await getData({ page, perPage });
+  let data = await getData({ page });
   return (
     <>
       <div className={styles.container}>
@@ -50,11 +49,7 @@ export default async function Blog({ searchParams }) {
           </div>
         </main>
       </div>
-      <PaginationComponents
-        url={"/blog"}
-        totalBlogs={totalBlogs}
-        perPage={perPage}
-      />
+      <PaginationComponents url={"/blog"} totalBlogs={totalBlogs} />
       <GetInTouch />
     </>
   );

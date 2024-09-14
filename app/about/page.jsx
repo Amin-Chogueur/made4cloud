@@ -1,6 +1,6 @@
 import AboutFirst from "@/componenst/aboutComponents/aboutFirstSection/AboutFirst";
 import Founder from "@/componenst/aboutComponents/founder/Founder";
-
+import AboutDesc from "@/componenst/aboutDescription/AboutDesc";
 import Version from "@/componenst/aboutComponents/version/Version";
 import GetInTouch from "@/componenst/getInTouch/GetInTouch";
 
@@ -41,15 +41,7 @@ const aboutData = [
 function About() {
   return (
     <div>
-      <div
-        style={{
-          minHeight: "calc(100vh - 120px)",
-          marginTop: "60px",
-          marginBottom: "80px",
-        }}
-      >
-        <AboutFirst data={aboutData[0]} largeImage={"large"} />
-      </div>
+      <AboutDesc data={aboutData[0]} />
       <Version />
       <Founder />
       <AboutFirst data={aboutData[1]} />

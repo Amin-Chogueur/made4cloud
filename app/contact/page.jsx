@@ -19,10 +19,7 @@ export const metadata = {
 };
 function Contact() {
   return (
-    <div
-      className={styles.contact}
-      style={{ minHeight: "calc(100vh - 120px)", marginTop: "40px" }}
-    >
+    <div className={styles.contactPage}>
       <div className={styles.contactContainer}>
         <div className={styles.content}>
           <h1>Reach Out and Transform with Made4Cloud</h1>

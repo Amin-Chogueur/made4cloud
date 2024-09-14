@@ -3,7 +3,7 @@ import { FaCircleArrowLeft } from "react-icons/fa6";
 import { FaArrowCircleRight } from "react-icons/fa";
 import styles from "./pagination.module.css";
 import { useSearchParams, useRouter } from "next/navigation";
-function PaginationComponents({ url, totalBlogs, perPage }) {
+function PaginationComponents({ url, totalBlogs, perPage = 10 }) {
   const route = useRouter();
   const searchParams = useSearchParams();
   const totalPage = Math.ceil(totalBlogs / perPage);

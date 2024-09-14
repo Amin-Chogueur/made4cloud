@@ -36,7 +36,6 @@ export async function generateMetadata({ params }) {
 }
 
 async function Blog({ params, searchParams }) {
-  const perPage = 6;
   const page = searchParams.page;
   if (params.slug.length === 2) {
     const categorie = params.slug[0].replace(/-/g, " ");
@@ -116,7 +115,7 @@ async function Blog({ params, searchParams }) {
 
   if (params.slug.length === 1) {
     const categorie = params.slug[0].replace(/-/g, " ");
-    const { dataLength, data } = await getCategorie(categorie, page, perPage);
+    const { dataLength, data } = await getCategorie(categorie, page);
     if (data.length === 0) {
       redirect("/blog");
     }
@@ -160,7 +159,6 @@ async function Blog({ params, searchParams }) {
         <PaginationComponents
           url={`/blog/${categorie.replace(/ /g, "-")}`}
           totalBlogs={dataLength}
-          perPage={perPage}
         />
         <GetInTouch />
       </>

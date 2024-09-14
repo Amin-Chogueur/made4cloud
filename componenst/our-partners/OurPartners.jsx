@@ -1,9 +1,11 @@
 import Image from "next/image";
 import styles from "./ourPratners.module.css";
 import Wavy from "@/componenst/waveBackground/Wavy";
+import TopWave from "../topWave/TopWave";
 function OurPartners() {
   return (
     <div className={styles.content}>
+      <TopWave />
       <h2>Our Trusted Partners</h2>
       <p>
         Join visionary clients who trust Made4Cloud for their digital journey.
