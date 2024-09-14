@@ -28,7 +28,7 @@ function Services() {
           marginTop: "100px",
           textAlign: "center",
           color: "var(--main)",
-          fontSize: "45px",
+          fontSize: "36px",
           fontWeight: "800",
         }}
       >

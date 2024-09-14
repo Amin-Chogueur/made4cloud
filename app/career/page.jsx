@@ -2,7 +2,7 @@ import Link from "next/link";
 import styles from "./career.module.css";
 function Career() {
   return (
-    <div style={{ minHeight: "calc(100vh - 120px)", marginTop: "140px" }}>
+    <div style={{ minHeight: "calc(100vh - 120px)", marginTop: "80px" }}>
       <div className="career-page">
         <header className={styles.careerHeader}>
           <h1>Join Our Team</h1>

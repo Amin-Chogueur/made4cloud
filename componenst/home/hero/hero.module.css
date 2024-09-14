@@ -94,4 +94,17 @@
   .statistic {
     margin-top: 20px;
   }
+  .heroContent h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+  .heroContent p {
+    font-size: 17px;
+  }
+  .statistic .box {
+    font-size: 25px;
+  }
+  .statistic .box P {
+    font-size: 25px;
+  }
 }

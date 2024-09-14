@@ -18,12 +18,12 @@
   fill: var(--secondary);
 }
 .customShapeDividerTop1725574060ForMobile {
-  visibility: hidden;
+  display: none;
 }
 
 @media (max-width: 768px) {
   .customShapeDividerTop1725574060ForMobile {
-    visibility: visible;
+    display: block;
     position: absolute;
     bottom: -90px;
     left: 0;

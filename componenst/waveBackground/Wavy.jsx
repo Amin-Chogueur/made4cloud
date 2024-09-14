@@ -21,11 +21,11 @@ function Wavy() {
           ></path>
         </svg>
       </div>
-      {/*<div className={styles.customShapeDividerTop1725574060ForMobile}>
+      <div className={styles.customShapeDividerTop1725574060ForMobile}>
         <svg
           data-name="Layer 1"
           xmlns="http://www.w3.org/2000/svg"
-          viewBox="10 10 500 370"
+          viewBox="30 10 650 370"
           preserveAspectRatio="none"
         >
           <path
@@ -39,7 +39,7 @@ function Wavy() {
             className={styles.shapeFill}
           ></path>
         </svg>
-      </div>*/}
+      </div>
     </>
   );
 }
