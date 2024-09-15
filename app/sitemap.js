@@ -20,6 +20,22 @@ export default async function sitemap() {
       url: "https://made4cloud.vercel.app/",
       lastModified: new Date(),
     },
+    {
+      url: "https://made4cloud.vercel.app/about",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://made4cloud.vercel.app/services",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://made4cloud.vercel.app/contact",
+      lastModified: new Date(),
+    },
+    {
+      url: "https://made4cloud.vercel.app/career",
+      lastModified: new Date(),
+    },
     ...blogsUrl,
     ...categoriesUrl,
   ];
