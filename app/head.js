@@ -7,6 +7,7 @@ export default function Head() {
         name="description"
         content="Leading CloudCraze solutions provider..."
       />
+      <link rel="icon" href="/favicon.ico" />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{

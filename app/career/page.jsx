@@ -1,5 +1,20 @@
 import Link from "next/link";
 import styles from "./career.module.css";
+
+export const metadata = {
+  title: "Career-Made4Cloud Ltd | CloudCraze Experts & Cloud Service Providers",
+  description: `At Made4Cloud Ltd, we value innovation, collaboration, and personal growth. We’re excited to build a future together with passionate
+  people.`,
+  keywords: [
+    "About Made4Cloud Ltd",
+    "CloudCraze",
+    "cloud experts",
+    "B2B Commerce",
+    "Sales Cloud",
+    "Service Cloud",
+    "cloud services provider",
+  ],
+};
 function Career() {
   return (
     <div style={{ minHeight: "calc(100vh - 120px)", marginTop: "80px" }}>
