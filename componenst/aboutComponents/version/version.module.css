@@ -1,5 +1,7 @@
 .versionContianer {
   background-color: var(--secondary);
+  position: relative;
+  margin-bottom: 50px;
 }
 .container {
   width: 80%;

@@ -1,4 +1,5 @@
 import styles from "./version.module.css";
+import Wavy from "@/componenst/waveBackground/Wavy";
 function Version() {
   return (
     <div className={styles.versionContianer}>
@@ -10,6 +11,7 @@ function Version() {
           with cutting-edge technology solutions, fostering growth and success.
         </p>
       </div>
+      <Wavy />
     </div>
   );
 }
