@@ -36,6 +36,14 @@ function Hero() {
             <span />
             <p>Projects</p>
           </div>
+          <div className={styles.box}>
+            <h3 style={{ display: "flex" }}>
+              {" "}
+              <NumberCounter num={11} />+
+            </h3>
+            <span />
+            <p>Certificates</p>
+          </div>
         </div>
       </div>
       <div className={styles.heroImage}>

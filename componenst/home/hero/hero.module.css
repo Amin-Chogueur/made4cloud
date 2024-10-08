@@ -1,11 +1,11 @@
 .heroContainer {
   width: 80%;
-  margin: 30px auto 0;
+  margin: 50px auto 0;
   display: flex;
   gap: 50px;
   justify-content: space-between;
   align-items: center;
-  height: calc(100vh - 60px);
+  min-height: 100vh;
 }
 .heroContent {
   flex: 1;
@@ -82,27 +82,30 @@
     border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
   }
 }
+@media (max-width: 1199px) {
+  .heroContent h2 {
+    font-size: 32px;
+    text-align: center;
+  }
+}
 @media (max-width: 992px) {
   .heroContainer {
     margin-top: 80px;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-  }
-  .statistic {
-    margin-top: 20px;
+    gap: 0;
   }
   .heroContent h2 {
-    font-size: 32px;
-    text-align: center;
+    font-size: 26px;
   }
   .heroContent p {
     font-size: 17px;
   }
   .statistic .box {
-    font-size: 25px;
+    font-size: 20px;
   }
   .statistic .box P {
-    font-size: 25px;
+    font-size: 20px;
   }
 }
