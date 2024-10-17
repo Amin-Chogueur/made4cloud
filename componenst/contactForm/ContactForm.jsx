@@ -4,21 +4,25 @@ import { useState } from "react";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 function ContactForm() {
-  const [isClicked, setIsClicked] = useState(false);
   const [formData, setFormData] = useState({
     name: "",
     email: "",
-    message: "",
     phone: "",
+    message: "",
   });
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value,
+    });
   };
+  const [status, setStatus] = useState("SEND");
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    setIsClicked(true);
+    setStatus("Sending...");
     try {
       const res = await fetch("/api/contact", {
         method: "POST",
@@ -26,19 +30,20 @@ function ContactForm() {
         body: JSON.stringify(formData),
       });
 
-      const data = await res.json();
-
-      toast.success(data.message);
+      const result = await res.json();
+      setStatus(result.status);
+      toast.success("Submission Success");
     } catch (error) {
+      setStatus("Submission failed");
       toast.error("Error sending email!");
     } finally {
+      setStatus("SEND");
       setFormData({
         name: "",
         email: "",
-        message: "",
         phone: "",
+        message: "",
       });
-      setIsClicked(false);
     }
   };
 
@@ -72,9 +77,7 @@ function ContactForm() {
           onChange={handleChange}
           placeholder="Your Message"
         />
-        <button disabled={isClicked} type="submit">
-          Send Message
-        </button>
+        <button type="submit">{status}</button>
       </form>
       <ToastContainer />
     </>

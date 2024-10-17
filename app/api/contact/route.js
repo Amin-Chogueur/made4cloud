@@ -1,41 +1,23 @@
-import nodemailer from "nodemailer";
+import { Resend } from "resend";
 import { NextResponse } from "next/server";
 
-export async function POST(req) {
-  try {
-    const { name, email, message, phone } = await req.json();
+const resend = new Resend(process.env.RESEND_API_KEY);
 
-    // Transporter setup
-    const transporter = nodemailer.createTransport({
-      service: "gmail",
-      auth: {
-        user: process.env.EMAIL_USER,
-        pass: process.env.EMAIL_PASS,
-      },
+export async function POST(request) {
+  const body = await request.json();
+
+  try {
+    const data = await resend.emails.send({
+      from: "Acme <onboarding@resend.dev>", // replace with your sender email
+      to: "chogueuramine@gmail.com", // form input email
+      subject: "Message from made4cloud LTD ",
+      html: `<p>Name: ${body.name}</p><p>Email: ${body.email}</p><p>Message: ${body.message}</p>`,
     });
 
-    // Email details
-    const mailOptions = {
-      from: email,
-      to: process.env.RECEIVER_EMAIL,
-      subject: `Contact form submission from ${name}`,
-      text: `Message: ${message}\nPhone: ${phone}`,
-
-      html: `<p><strong>Name:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Phone:</strong> ${phone}</p><p><strong>Message:</strong> ${message}</p>`,
-    };
-
-    // Send mail
-    await transporter.sendMail(mailOptions);
-
-    // Return success response using NextResponse
-    return NextResponse.json(
-      { message: "Your email sent successfully!" },
-      { status: 200 }
-    );
+    return NextResponse.json({ status: "Email sent successfully" });
   } catch (error) {
-    console.error("Error sending email: ", error);
     return NextResponse.json(
-      { error: "Failed to send email" },
+      { status: "Email sending failed", error },
       { status: 500 }
     );
   }
