@@ -766,6 +766,7 @@ Experience Cloud sites developed using the Aura framework exhibit distinctions f
 `,
   },
 ];
+
 export const categories = [
   "CloudCraze",
   "Apex",
@@ -783,7 +784,7 @@ export async function getBlogs() {
 export async function getCategories() {
   return categories;
 }
-export async function getData({ page = 1, perPage = 10 }) {
+export async function getData({ page = 1, perPage = 6 }) {
   const start = Number(page - 1) * perPage;
   const end = start + perPage;
   return blogData.slice(start, end);
@@ -800,7 +801,7 @@ export async function getRelatedPost(categorie, id) {
   return data.slice(0, 3);
 }
 
-export async function getCategorie(categorie, page = 1, perPage = 10) {
+export async function getCategorie(categorie, page = 1, perPage = 6) {
   const start = Number(page - 1) * perPage;
   const end = start + perPage;
   const dataCategorie = blogData.filter((blog) => blog.category === categorie);
