@@ -3,16 +3,24 @@ This is a professional website developed for Made4Cloud Ltd, a company specializ
 
 ## Features
 Corporate website for a Salesforce service provider
+
 SEO optimization for better search engine rankings
+
 Responsive and user-friendly design
+
 Custom-built in Next.js with Tailwind CSS
+
 
 
 ## Technologies Used
 Next.js: For server-side rendering and dynamic routing
+
 Tailwind CSS: For styling and responsive layouts
+
 React: For building reusable UI components
+
 SEO best practices: Ensures high visibility on search engines
+
 
 
 ## Getting Started
