@@ -8,16 +8,15 @@ SEO optimization for better search engine rankings
 
 Responsive and user-friendly design
 
-Custom-built in Next.js with Tailwind CSS
+Custom-built in Next.js with  CSS
 
 
 
 ## Technologies Used
-Next.js: For server-side rendering and dynamic routing
+Next.js: For server-side and client-side rendering and dynamic routing
 
 Tailwind CSS: For styling and responsive layouts
 
-React: For building reusable UI components
 
 SEO best practices: Ensures high visibility on search engines
 
