@@ -19,9 +19,13 @@ SEO best practices: Ensures high visibility on search engines
 To run the project locally, clone the repository and install the dependencies:
 
 git clone https://github.com/Amin-Chogueur/made4cloud.git
+
 cd made4cloud
+
 npm install
+
 npm run dev
+
 Then, open the app in your browser at http://localhost:3000.
 
 ## Deployment
